@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accediendo a nodos hermanos</title>
+</head>
+<body>
+    <h1 class="titiulo">Accediendo a un nodo hermano (nextSibling y previousSibling - nextElementSibling y previousElementSibling)</h1>
+
+    <div class="continaer">
+        <p id="parrafo1">Si tenemos la referencia de un nodo podemos fácilmente acceder a los otros nodos que se encuentran en la misma altura dentro del árbol que genera el DOM.</p>
+
+        <p>Veamos con un ejemplo como obtenemos la referencia de los nodos hermanos, implementaremos una página que contenga tres párrafos y sólo disponemos el id del primero de ellos.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fugiat quis blanditiis maxime dolore sit aut consequuntur nostrum. Exercitationem velit nesciunt magnam saepe rerum sunt iusto! Officiis fugiat perferendis accusantium.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quo dolor nemo delectus nisi, nam ut veritatis sapiente excepturi quam cupiditate modi nihil ipsa cumque illum quidem accusamus eius. Recusandae!</p>
+
+        <button  type="submit" value="acceder a los 4 parrafos" onclick="accederParrafos()">Proximo parrafo</button>
+
+        <button  type="submit" id="btn-anterior" value="acceder a los 4 parrafos" onclick="accederParrafosAnteriores()">Parrafo Anterior</button>
+        
+    </div>
+
+
+    <p id="enBlanco"></p>
+
+    <!-- Importando el js -->
+    <script src="./js/10.siblingNode.js"></script>
+</body>
+</html>

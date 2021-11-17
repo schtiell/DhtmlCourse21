@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando los estilos css -->
+    <link rel="stylesheet" href="./css/08.styles.css" type="text/css">
+    <title>Accediendo al parent Node</title>
+</head>
+<body>
+    <h1>Parent Node</h1>
+
+    <div class="container">
+        <p id="parrafo1">Si tenemos la referencia a un nodo podemos obtener fácilmente la referencia del nodo padre mediante la propiedad parentNode.</p>
+
+        <p>Veamos un ejemplo sencillo donde obtenemos la referencia de un párrafo contenido en un div. Luego por medio de esta referencia obtenemos la referencia al div y cambiamos el color de fondo del div.</p>
+    </div>
+
+    <p id="explicacion">
+        El div con clase container es el nodo padre de 2 parrafos por lo que al obtener el id de cualquiera de los 2 parrafos podemos saber que elemento es el nodo padre utilizando la propiedad parentNode
+    </p>
+    <button type="submit" value="cambiarColorDiv" onclick="cambiarColorDiv()">Cambiar color!!</button>
+
+    <!-- Importando el js -->
+    <script src="./js/08.parentNode.js"></script>
+</body>
+</html>
