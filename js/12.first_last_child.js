@@ -34,12 +34,22 @@ function obtenerElementosParrafo() {
     console.log(`${lchild}`);
 }
 
-function getParagraphs() {
+var getParagraphs = function () {
     let container = document.getElementById("container");
     let parrafos = container.lastElementChild;
 
     while (parrafos != null) {
         console.log(parrafos.childNodes[0].nodeValue);
         parrafos = parrafos.previousElementSibling;
+    }
+}
+
+var parrafos_fn = function () {
+    let contenedorParrafos = document.getElementById("container");
+    let parrafos = contenedorParrafos.firstElementChild;
+
+    while ( parrafos != null) { 
+        console.log(parrafos.childNodes[0].nodeValue);
+        parrafos = parrafos.nextElementSibling;
     }
 }
