@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>firstChild & lastChild</title>
+</head>
+<body>
+    <h1> firstChild & lastChild</h1>
+
+    <p>Otra forma de acceder al primer y último nodo hijo es por medio de las propiedades firstChild (retorna la referencia del primer hijo, es lo mismo que poner obj.childNodes[0]) y obj.lastChild (retorna la referencia del último hijo, es sinónimo de poner obj.childNodes[obj.childNodes.length-1])</p>
+
+    <p>dispondremos tres párrafos dentro de un div. Acceder al primer hijo del div y luego avanzando con el método nextSibling llegar hasta el final de la lista de hermanos, mostrar el texto de cada párrafo.</p>
+
+    <div id="parrafos">
+        <!-- Este es un comentario -->
+        <p>Este es el primer parrafo</p>
+        <p>Este es el segundo parrafo</p>
+        <p>Este es el tercer parrafo</p>
+    </div>
+
+    <button type="submit" onclick="obtenerParrafo()">Obtener todos los hermanos</button>
+
+    <button type="submit" onclick="obtenerElementosParrafo()">Obtener todos los elementos hermanos</button>
+
+    <!-- importando el js -->
+    <script src="./js/12.first_last_child.js"></script>
+</body>
+</html>
