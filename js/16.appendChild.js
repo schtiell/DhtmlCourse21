@@ -23,3 +23,23 @@ let agregarParrafo = function () {
     contador += 1;
 
 }
+
+function addItemsList(){
+
+    let textNode1 = document.createTextNode("Elemento de la lista");
+    let textNode2 = document.createTextNode("Elemento de la lista");
+    let textNode3 = document.createTextNode("Elemento de la lista");
+
+    let itemList1 = document.getElementById("l1");
+    itemList1.innerText = " ";
+    itemList1.appendChild(textNode1);
+
+    let itemList2 = document.getElementById("l2");
+    itemList2.innerText = " ";
+    itemList2.appendChild(textNode2);
+
+    let itemList3 = document.getElementById("l3");
+    itemList3.innerText = " ";
+    itemList3.appendChild(textNode3);
+
+}
