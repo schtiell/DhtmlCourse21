@@ -39,13 +39,13 @@ var esconderParrafos = function () {
 
     let parrafos = container.getElementsByTagName("p");
 
-    console.log(container)
+    console.log(container);
 
-
+    console.log(parrafos);
 
     for (const p of parrafos) {
 
-        console.log(`${container.childElementCount } - ${p.innerHTML}`);
+        console.log(`${container.children[0].nodeName} - ${p.innerHTML}`);
 
         p.style.display = "none";
     }
