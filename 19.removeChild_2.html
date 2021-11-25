@@ -12,33 +12,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    
-    <style>
 
+    <style>
         html,
-        body {
-            margin: 20px;
+        body{
+            margin: 10px;
+            padding: 10px;
         }
 
-        p {
-            margin: 40px 20px;
+        button{
+            margin: 10px;
         }
 
     </style>
 
+    <title>removeChild() y hasChildNodes()</title>
 
-    <title>removeChild() & hasChildNodes()</title>
 </head>
 <body>
-    
-    <h1>Eliminar un nodo de texto (removeChild) y verificar si tiene nodos hijo (hasChildNodes)</h1>
+    <h1>removeChild() y hasChildNodes()</h1>
 
-    <p id="parrafo">Texto inicial: </p>
+    <p id="parrafo">......</p>
 
-    <button type="submit" value="agregarElemento" class ="btn btn-primary" onclick="agregarElemento()">Agregar elemento</button>
-    <button type="submit" value="eliminarElemento" class="btn  btn-warning" onclick="eliminarElemento()">Eliminar elemento</button>
+    <button type="submit" class="btn btn-danger" onclick="eliminar()">Eliminar</button>
+    <button type="submit" class="btn btn-primary" onclick="agregar()">Agregar</button>
 
-    <script src="./js/18.removeChild.js"></script>
-
+    <script src="./js/19.removeChild.js"></script>
 </body>
 </html>

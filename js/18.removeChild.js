@@ -3,6 +3,7 @@ console.log('removeChild');
 
 let contador = 1;
 
+
 var agregarElemento = function () {
 
     //console.log("Elemento agregado!!!");
