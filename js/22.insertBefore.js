@@ -22,3 +22,20 @@ let insertarEnmedio = function () {
     console.log('parrafo insertado exitosamente')
 
 }
+
+
+let insertarAlPrincipio = function (){
+    
+    let textNode = document.createTextNode("Success: Ejercicio resuelto");
+
+    let nodeElement = document.createElement("p");
+
+    nodeElement.appendChild(textNode);
+
+    let contenedorPadre = document.getElementById("container");
+
+    let puntero = contenedorPadre.firstChild;
+
+    contenedorPadre.insertBefore(nodeElement, puntero).style.background = "orange";
+
+}
