@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando la libreria de jQuery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <style>
+
+        html,
+        body {
+            margin: 20px;
+        }
+
+        p {
+            margin: 40px 20px;
+        }
+
+    </style>
+
+
+    <title>removeChild() & hasChildNodes()</title>
+</head>
+<body>
+    
+    <h1>Eliminar un nodo de texto (removeChild) y verificar si tiene nodos hijo (hasChildNodes)</h1>
+
+    <p id="parrafo">Texto inicial: </p>
+
+    <button type="submit" value="agregarElemento" class ="btn btn-primary" onclick="agregarElemento()">Agregar elemento</button>
+    <button type="submit" value="eliminarElemento" class="btn  btn-warning" onclick="eliminarElemento()">Eliminar elemento</button>
+
+    <script src="./js/18.removeChild.js"></script>
+
+</body>
+</html>
