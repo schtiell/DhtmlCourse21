@@ -37,3 +37,13 @@ let eliminarBorde = function () {
     console.log("Atributo removido");
 
 }
+
+let obtenerAtributo = function () {
+
+    let tabla = document.getElementById("tabla");
+
+    let atributo = tabla.getAttribute("border");
+
+    console.log(atributo);
+
+}
