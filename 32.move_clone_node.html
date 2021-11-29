@@ -25,7 +25,8 @@
             margin-bottom: 40px;
         }
     
-        div{
+        .container,
+        #container1{
             border: 1px solid black;
             padding: 15px;
             margin: 10px;
@@ -40,32 +41,28 @@
             list-style-type: none;
         }
     </style>
-    
 
-    <title>Clonando elementos HTML</title>
+    <title>Moviendo y clonando elementos</title>
 </head>
 <body>
     <div class="container text-center">
-        <h1>Mover un nodo de tipo elemento y clonación de nodos:</h1>
 
-        <div id="containerLista" class="container text-center">
-            <ul id="lista1">
-                <li>Elemento lista 1</li>
-                <li>Elemento lista 2</li>
-                <li>Elemento lista 3</li>
-                <li>Elemento lista 4</li>
-            </ul>
+        <h1>Moviendo y clonando elementos</h1>
+
+        <div id="container1">
+            <p>Parrafo 1</p>
+            <p>Parrafo 2</p>
+            <p>Parrafo 3</p>
         </div>
 
-        <div id="containerLista2" class="container text-center">
-
+        <div id="container2">
         </div>
 
-        <button type="submit" onclick="moverElementos()" class="btn btn-primary" >Mover elementos</button>
-
-        <button type="submit" onclick="clonarElementos()" class="btn btn-primary">Clonar elementos</button>
+        <button type="submit" onclick="moveElements()" class="btn btn-primary">Mover elementos</button>
+        <button type="submit" onclick="cloneElements()" class="btn btn-primary">Clonar elementos</button>
     </div>
 
+    <!-- Importando el archivo js -->
     <script src="./js/31.move_clone_elements.js"></script>
 </body>
 </html>
