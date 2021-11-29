@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Importando la libreria de jQuery -->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+
+        <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    
+        <!-- Aplicando stilos css -->
+        <style>
+            html,
+            body{
+                margin: 10px;
+                padding: 10px;
+            }
+    
+            h1{
+                margin-bottom: 40px;
+            }
+    
+            div{
+                border: 1px solid black;
+                padding: 15px;
+                margin: 10px;
+                width: 50%;
+            }
+    
+            button{
+                margin: 20px;
+            }
+            
+            li{
+                list-style-type: none;
+            }
+        </style>
+    
+
+    <title>Clonando elementos HTML</title>
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Mover un nodo de tipo elemento y clonación de nodos:</h1>
+
+        <div id="containerLista" class="container text-center">
+            <ul id="lista1">
+                <li>Elemento lista 1</li>
+                <li>Elemento lista 2</li>
+                <li>Elemento lista 3</li>
+                <li>Elemento lista 4</li>
+            </ul>
+        </div>
+
+        <div id="containerLista2" class="container text-center">
+
+        </div>
+
+        <button type="submit" onclick="moverElementos()" class="btn btn-primary" >Mover elementos</button>
+
+        <button type="submit" onclick="clonarElementos()" class="btn btn-primary">Clonar elementos</button>
+    </div>
+
+    <script src="./js/31.move_clone_elements.js"></script>
+</body>
+</html>
