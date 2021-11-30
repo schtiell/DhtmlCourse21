@@ -47,3 +47,27 @@ let crearEnlaces = function () {
 
     contenedor_2.appendChild(nodo_elemento_2);
 }
+
+
+function crearLista(){
+
+    //Definiendo un arreglo con los dias de la semana
+    const arrayDays = ["Lunes","Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+
+    //Variable tipo string en blanco
+    let cadena = "";
+    
+    //For of ejecuta un bloque de codigo para un objeto iterable
+    for (let i of arrayDays) {
+        
+        //Concatena una serie de elementos <li> con el valor de cada posición del array
+        cadena += `<li>${i}</li>`;
+        
+    }
+
+    //Imprimiendo el valor de la variable cadena en consola
+    console.log(cadena);
+    
+    //Impimiendo en el DOM el valor de la cadena con todos los elementos <li>
+    document.getElementById("listaNoOrdenada").innerHTML = cadena;
+}
