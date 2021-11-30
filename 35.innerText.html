@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando la libreria de jQuery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Aplicando stilos css -->
+    <style>
+        html,
+        body{
+            margin: 10px;
+            padding: 10px;
+        }
+        
+        h1,h2{
+            margin: 40px;
+        }
+        
+        .container{
+            border: 1px solid black;
+            padding: 15px;
+            margin: 10px;
+            width: 50%;
+        }
+        
+        button{
+            margin: 20px;
+        }
+    </style>
+
+    <title>Propiedad innerText</title>
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Propiedad innerText</h1>
+
+        <p>La propiedad innerText, nos permite cambiar el contenido de texto de una elemento de texto o consultar su valor.</p>
+
+        <p>A diferencia de innerHTML si le asignamo un string que contiene en su interior etiquetas HTML, luego no se generan nodos en el DOM sino que se muestran dichos caracteres en la página</p>
+
+        <p>Ejemplo: Mostrar un título y mediante un botón proceder a cambiar su contenido y otro botón que extraiga el texto del mismo</p>
+
+        <h1 id="titulo">Titulo original</h1>
+
+        <button type="submit"  class="btn btn-primary" onclick="cambiarTitulo()">Cambiar titulo!!</button>
+        <button type="submit"  class="btn btn-primary" onclick="recuperarTitulo()">Recuperar titulo</button>
+    </div>
+    
+    <script src="./js/35.innerText.js"></script>
+</body>
+</html>
