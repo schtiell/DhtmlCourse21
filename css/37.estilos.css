@@ -1,0 +1,27 @@
+
+html,
+body{
+    margin: 20px
+}
+
+select{
+    margin-bottom: 20px;
+}
+
+.container{
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+#parrafo {
+    font-size: 20px;
+    text-align: center;
+
+}
+
+label{
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    margin: 16px;
+}
