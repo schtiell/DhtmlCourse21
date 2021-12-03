@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando la libreria jQuery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <style>
+        input{
+            margin: 10px;
+        }
+
+        input{
+            margin: 10px;
+        }
+    </style>
+
+    <title>Creando controles tipo input dinamicamente con js</title>
+
+</head>
+<body>
+    
+    <div class="container text-center">
+        <h1>Creando controles html tipo input dinamicamente</h1>
+
+        <!-- Creando un formulario -->
+        <form method="post" action="#">
+
+            <label for="">Ingrese su nombre:
+                <input type="text" name="nombre" id="nombreInicial">
+            </label>
+
+            <fieldset id="fieldset-id">
+                <legend id="legend">Ingrese los nombres de sus hijos:</legend>
+                <input type="button" value="agregarElementos" class="btn btn-primary" onclick="generarControles()" id="botton">
+                <br>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="./js/38.controlesInput_dinamicos.js"></script>
+</body>
+</html>
