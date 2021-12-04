@@ -24,6 +24,15 @@
             border: 1px solid #000;
             padding: 20px;
         }
+
+        .puntero:hover{
+            cursor: pointer;
+        }
+
+        span{
+            font-weight: bold;
+            font-style: oblique;
+        }
     </style>
     
     <title>Evento onclic</title>
@@ -33,6 +42,26 @@
 
         <h1>Utilizando el evento: <small>onclick</small></h1>
 
+        <p>Un evento es un suceso que ocurre cuando se presiona una tecla, se presiona un botón, se dispone la flecha del mouse en una región, etc. Desde JavaScript podemos capturar estos eventos y efectuar un proceso (cambiar la fuente, abrir otra página, mostrar un mensaje etc.)</p>
+
+        <p>Los elementos que se muestran resaltados a continuación ejecutan una función con js al hacer clic sobre ellos, un parrafo, un elemento de una tabla y un boton, al poner el puntero sobre ellos el cursor cambia para indicar que se puede interactuar con el elemento</p>
+
+        <p onclick="clicParrafo()" class="puntero"><span>Este es un parrafo cualquiera</span></p>
+
+        <table>
+            <tr>
+                <td onclick="clicCelda()" class="puntero"><span>nombre</span></td>
+                <td>apellido</td>
+            </tr>
+            <tr>
+                <td>joaquin</td>
+                <td>sayago</td>
+            </tr>
+        </table>
+
+        <button type="submit" class="btn btn-primary" onclick="clicBotton()">Enviar</button>
     </div>
+
+    <script src="./js/39.eventoonclick.js"></script>
 </body>
 </html>
