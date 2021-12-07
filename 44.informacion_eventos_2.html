@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando la libreria jQuery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+            
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <style>
+
+        .container{
+            margin-top: 30px;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        #parrafo{
+            font-size: 14px;
+            background-color: #FFECB3;
+            cursor: pointer;
+        }
+
+        #ayuda{
+            color: #37474F;
+            background: #B3E5FC;
+            position: absolute;
+            text-align: center;
+            left: 40px;
+            top: 30px;
+            width: 100px;
+            height: 40px;
+            display: none;
+        }
+
+    </style>
+
+    <title>Informacion generada por eventos</title>
+</head>
+<body>
+    
+    <div class="container text-center">
+
+        <h1>Informacion generada por eventos</h1>
+
+        <p id="parrafo" onclick="presionandoParrafo(event)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, totam reprehenderit quae illo nulla excepturi optio expedita a reiciendis voluptatum neque sapiente. Aliquid a nostrum cupiditate eveniet placeat delectus sed.</p>
+
+        <div id="ayuda">
+            ayuda
+        </div>
+    </div>
+    <script src="./js/43.infoEventos.js"></script>
+</body>
+</html>
