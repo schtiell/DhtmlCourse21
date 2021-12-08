@@ -23,3 +23,15 @@ let acercarMouse = function (obj){
     console.log("onmouseover event")
     obj.style.background = " #EFEBE9";
 }
+
+let presionar_Boton = function (objeto) {
+
+    objeto.style.background = "red";
+    return color;
+}
+
+let soltar_Boton = function (objeto) {
+
+    let color = objeto.style.background;
+    objeto.style.background = "blue";
+}
