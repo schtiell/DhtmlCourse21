@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando la libreria jQuery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+            
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <style>
+        .container{
+            margin: 20px auto;
+            background-color: #EBF5FB;
+            color: #212F3D;
+            text-align: justify;
+            padding: 10px;
+        }
+
+        h1{
+            margin: 30px auto;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+
+    <title>onload & unonload events</title>
+</head>
+<body onload="imprimirMensaje()" onunload="imprimirDespedida()"    >
+
+    <div class="container">
+
+        <h1>onload & unload: <small>event</small></h1>
+
+        <p>El evento onload se dispara cuando terminamos de cargar toda la página. Es decir luego que se a creado el árbol con todos los elementos de la página. Cuando se dispara este evento estamos seguro que todos los elementos de la página están creados.</p>
+
+        <p>El evento onunload se dispara cuando salimos del sitio y nos dirigimos por medio de un hipervínculo a otro o cerramos la ventana del navegador.</p>
+
+        <a href="http://google.com">Ir a google</a>
+
+    </div>
+    
+    <script src="./js/50.onload_onunload.js"></script>
+</body>
+</html>
