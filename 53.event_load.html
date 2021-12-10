@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Importando la libreria jQuery -->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+
+        <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+                
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    
+        <style>
+            .container{
+                margin: 20px auto;
+                background-color: #EBF5FB;
+                color: #212F3D;
+                text-align: center;
+                padding: 10px;
+            }
+    
+            h1{
+                margin: 30px auto;
+                cursor: pointer;
+                text-align: center;
+            }
+
+            span{
+                font-style: oblique;
+                font-weight: bold;
+            }
+
+            button{
+                margin: 20px 40px;
+            }
+
+        </style>
+        
+    <title>Event load</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Event load: w3c</h1> 
+        <h2 id="subtitulo">
+
+        </h2>
+        <p>Este sitio utiliza el modelo de eventos propuestos por el W3C.</p>
+
+        <button type="submit" name="btn-1" id="id-btn1" value="button1" class="btn btn-primary">Boton1</button>
+        <button type="submit" name="btn-2" id="id-btn2" value="button2" class="btn btn-primary">Boton2</button>
+    </div>
+
+    <script src="./js/53.event_load_w3c.js"></script>
+</body>
+</html>
