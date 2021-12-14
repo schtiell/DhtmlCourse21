@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando la libreria jQuery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+            
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <style>
+        .container{
+            margin: 20px auto;
+            background-color: #EBF5FB;
+            color: #212F3D;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            top: 50px;
+            left:100px
+        }
+    
+        h1{
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .form-control{
+            display: inline-block;
+            width: 40%;
+            margin: 30px 20px;
+        }
+
+    </style>
+
+    <title>Events: focus & blur</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Event: <small>focus & blur</small></h1>
+
+        <form action="#" >
+            <label for="text-name">Nombre:</label>
+            <input type="text" name="name" value="Nombre..." id="text-name" class="form-control">
+
+            <label for="text-email">email</label>
+            <input type="email" name="email" value="email..." id="text-email" class="form-control">
+
+        </form>
+    </div>
+
+    <script src="./js/59.focus_blur.js"></script>
+</body>
+</html>
