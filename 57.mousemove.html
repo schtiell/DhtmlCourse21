@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando la libreria jQuery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+            
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <style>
+        .container{
+            margin: 20px auto;
+            background-color: #EBF5FB;
+            color: #212F3D;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            top: 50px;
+            left:100px
+        }
+    
+        h1{
+            margin: 30px auto;
+            text-align: center;
+        }
+    
+        span{
+            font-style: oblique;
+            font-weight: bold;
+        }
+
+        .btn{
+            margin: 20px;
+            width: 25%;
+            display: inline-block;
+        }
+
+        .table{
+            background-color: white;
+            margin: 20px auto;
+        }
+
+        </style>
+    
+    <title>Event: mousemove</title>
+</head>
+<body>
+    <div class="container" id="table">
+
+        <h1>Event: <small>mousemove</small></h1>
+        <table class="table">
+            <thead>
+                <th scope="col">No</th>
+                <th scope="col">Nombre:</th>
+                <th scope="col">Apellido:</th>
+            </thead>
+            <tr>
+                <td scope="row">1</td>
+                <td>Joaquin</td>
+                <td>Sayago</td>
+            </tr>
+            <tr>
+                <td scope="row">2</td>
+                <td>Antonio</td>
+                <td>Trujillo</td>
+            </tr>
+            <tr>   
+                <td scope="row">3</td>
+                <td>Lulu</td>
+                <td>Sayago</td>
+            </tr>
+        </table>
+
+        <p id="coordenadas_x"></p>
+        <p id="coordenadas_y"></p>
+        
+    </div>
+
+
+
+    <script src="./js/57.event_mousemove.js"></script>
+</body>
+</html>
