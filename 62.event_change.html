@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando la libreria jQuery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+            
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <style>
+        .container{
+            margin: 20px auto;
+            background-color: #EBF5FB;
+            color: #212F3D;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            top: 50px;
+            left:100px
+        }
+
+        hr{
+            margin: 40px;
+        }
+    
+        h1{
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        h2{
+            margin: 30px;
+        }
+
+        label{
+            margin: 10px;
+        }
+
+        .form-control {
+            width: 45%;
+            margin: 10px auto;
+        }
+
+        .btn{
+            display: block;
+            margin: 40px auto;
+        }
+
+        textarea{
+            margin: 30px;
+        }
+
+    </style>
+
+
+    <title>Event: change</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Event: <small>change</small></h1>
+
+        <p>El evento change se dispara para los controles select, textarea e input de tipo text.</p>
+
+        <p>Para el control input se dispara cuando ha cambiado su contenido y pierde el foco, en cambio para el control select cada vez que cambiamos el item seleccionado se dispara el evento.</p>
+
+        <hr>
+
+        <form action="#" class="form-floating">
+
+            <label for="user-id">Nombre: </label>
+            <input type="text" name="user-name" id="name-id" class="form-control">
+
+            <label for="user-id">Apellido: </label>
+            <input type="text" name="user-lastname" id="lastname-id" class="form-control">
+
+            <label for="select-id">Selecciona una opcion:</label>
+            <select name="numbers" id="select-id" class="form-control">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary" id="btn-id">Enviar</button>
+        </form>
+    </div>
+    <script src="./js/62.event_change.js"></script>
+</body>
+</html>
