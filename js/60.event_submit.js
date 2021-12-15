@@ -13,10 +13,10 @@ formulario.addEventListener("submit", e =>{
 
     if( nombre.value == "" || pass.value == "" || passconfirm.value == ""){
         alert("Debes completar los campos del formulario");
-
         //el metodo preventDefaul() evita que se envien los datos al servidor
         e.preventDefault();
-        
+        return false;
+
     }else{
 
         if (pass.value == passconfirm.value){
@@ -28,6 +28,7 @@ formulario.addEventListener("submit", e =>{
 
             alert("La contraseña debe ser igual");
             e.preventDefault();
+            return false;
         }        
     }
 })
