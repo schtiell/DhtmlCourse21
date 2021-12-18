@@ -1,6 +1,7 @@
 console.log("Detener burbujeo de eventos");
 
 
+//Funcion que dispara el evento click de los botones
 let presionarBoton = function (e) {
     
     alert(`${e.target.id}`);
@@ -9,11 +10,13 @@ let presionarBoton = function (e) {
     e.stopPropagation();
 }
 
+//Funcion que dispara el evento click del container
 let presionarContenedor = function (e) {
 
     alert("Presionar el contenedor de los botones");
 }
 
+//Funcion que dispara el evento click del container
 let presionarDocumento = function (e) {
 
     alert("Se presionó el documento");

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando la libreria jQuery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+            
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <style>
+
+        .container{
+            background: #EBF5FB;
+            color: #212F3D;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        hr{
+            margin: 40px;
+        }
+    
+        h1{
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        button{
+            margin: 20px;
+        }
+    </style>
+
+    <title>Desactivar eventos por defecto de los elementos HTML</title>
+
+</head>
+<body>
+    <div class="container">
+        
+        <h1>Desactivación del evento por defecto de un elemento HTML (DOM)</h1>
+
+        <p>Hay elementos HTML que tienen por defecto eventos propios. El más característico es el hipervínculo "a". Como sabemos por defecto al presionar en el mismo se carga otra página en el navegador.</p>
+
+        <p>Desde JavaScript podemos detectar mediante el evento click la selección del hipervínculo y hacer alguna actividad. Si queremos que no se dispare la carga de la página debemos hacer:</p>
+
+        <p>e.preventDefault();</p>
+
+        <p>Siendo e el objeto de tipo event que llega como parámetro a la función.</p>
+
+        <p>Para probar su funcionamiento crearemos una página con un hipervínculo, al presionar el mismo capturaremos dicho evento y mediante JavaScript abriremos en otra pestaña del navegador la página indicada en el hipervínculo.</p>
+
+        <hr>
+
+        <p>El siguiente elemento es un ancla, link:</p>
+
+        <a href="https://google.com" id="ancla">Google</a>
+    </div>
+
+    <script src="./js/69.desactivar_evento_pordefecto.js"></script>
+</body>
+</html>
