@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando la libreria jQuery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <style>
+        .container{
+            background: #EBF5FB;
+            color: #212F3D;
+            text-align: center;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        hr{
+            margin: 40px;
+        }
+
+        h1{
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        span{
+            font-weight: bold;
+            font-style: oblique;
+        }
+        
+        .parrafo{
+            text-align: justify;
+        }
+
+        .lista{
+            text-align: left;
+            margin: 20px;
+            list-style: lower-alpha;
+        }
+
+        button{
+            margin: 20px;
+            width: 100px;
+        }
+    </style>
+
+    <title>querySelectorAll: </title>
+
+</head>
+<body>
+    <div class="container">
+
+        <h1>querySelectorAll(): <small>event</small></h1>
+
+        <h2>Accediendo a un conjunto de elementos HTML a traves de querySelectorAll</h2>
+
+        <p>De la misma manera que se puede acceder a un elemento html a traves de un selector css, podemos también acceder a un conjunto de elementos HTML mediante el método querySelectorAll.</p>
+
+        <p>El método querySelectorAll devuelve una lista con todos los nodos del DOM que cumplen la regla que le pasamos como parámetro.</p>
+
+        <p>Hay que tener en cuenta que querySelectorAll retorna un objeto de la clase NodeList.</p>
+
+        <hr>
+
+        <p><span>Ejercicio: </span>Disponer dos listas, una ordenada y otra no ordenada. Luego acceder a todas las opciones de la lista ordenada mediante el método querySelectorAll.</p>
+
+        <ol class="lista">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+        </ol>
+
+        <ul class="lista">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+        </ul>
+
+        <button type="submit" class="btn btn-primary">Boton</button>
+    </div>
+
+    <script src="./js/73.querySelectorAll.js"></script>
+</body>
+</html>
