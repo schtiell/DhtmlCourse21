@@ -1,5 +1,3 @@
-//console.log("tabla dinamica, reto 1");
-
 
 let generarTabla = function (palabra) {
 
@@ -21,46 +19,46 @@ let generarTabla = function (palabra) {
 
     tabla += `</table>`;
 
-};
+}
 
 document.querySelector("#textBox-id").addEventListener("keyup", () => {
     generarTabla(document.querySelector("#textBox-id").value);
-})
+});
 
 
 //Generar una tabla dinamica a partir del siguente arreglo de objetos, cada objeto contiene el nombre y la edad de las personas
 const personas = [
     {
         nombre: "dardo",
-        edad: 52
+        edad:   52
     },
     {
         nombre: "pedro",
-        edad: 522
+        edad:   522
     },
     {
         nombre: "ana",
-        edad: 89
+        edad:   89
     },
     {
         nombre: "alicia",
-        edad: 55
+        edad:   55
     },
     {
         nombre: "carlos",
-        edad: 21
+        edad:   21
     },
     {
         nombre: "capitanich",
-        edad: 89
+        edad:   89
     },
     {
         nombre: "carla",
-        edad: 66
+        edad:   66
     },
     {
         nombre: "altina",
-        edad: 90
+        edad:   90
     }
 ]
 
