@@ -61,11 +61,21 @@
             width: 500px;
             height: 200px;
             background: url(https://www.tutorialesprogramacionya.com/dhtmlya/imagenes/desafio001.png);
+            border: 1.5px solid #000;
+            border-radius: 15px;
         }
 
+        #textBox-id{
+            width: 30%;
+        }
+
+        label{
+            display: block;
+            text-align: left;
+            margin: 2rem;
+            font-weight: bold;
+        }
     </style>
-
-
 
     <title>Reto 1: Tabla dinamica</title>
 </head>
@@ -93,12 +103,13 @@
         <p><span>Solución:</span></p>
 
         <!-- Estructura de la tabla que se va a generar dinamicamente con js -->
-        <table class="table table-striped" id="dinamic-table">
+        <div class="table" id="table-container">
 
-        </table>
+        </div>
 
         <!-- Boton para el evento click que querará la tabla -->
-        <button type="submit" class="btn btn-primary">Generar tabla</button>
+        <label for="btn-id">Nombre: </label>
+        <input type="text" class="form-control" id="textBox-id">
 
     </div>
 
