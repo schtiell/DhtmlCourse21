@@ -1,0 +1,68 @@
+
+.container{
+    background: #FAFAFA;
+    color: #212F3D;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 30px;
+}
+
+small{
+    display: block;
+}
+
+hr{
+    margin: 40px;
+}
+
+h1{
+    margin: 30px auto;
+    text-align: center;
+}
+
+p{
+    margin: 20px;
+    text-align: justify;
+}
+
+span{
+    font-weight: bold;
+}
+
+image{
+
+    display: block;
+    margin: 35px auto;
+    width: 380px;
+    height: 300px;
+    background: url(https://www.tutorialesprogramacionya.com/dhtmlya/imagenes/desafio003a.png);
+    border: 1.5px solid #000;
+    border-radius: 15px;
+}
+
+#banderas{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.tarjeta{
+    width: 400px;
+    margin: 20px;
+    border: 1px solid gray;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    background: lightgray;
+    padding: 10px;
+}
+
+.tarjeta img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tarjeta p{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
