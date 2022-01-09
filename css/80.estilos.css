@@ -1,0 +1,80 @@
+
+/*Estilos definidos por mi para la plantilla del ejemplo*/
+
+.container{
+    background: #FAFAFA;
+    color: #212F3D;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 30px;
+}
+
+small{
+    display: block;
+}
+
+hr{
+    margin: 40px;
+}
+
+h1{
+    margin: 30px auto;
+    text-align: center;
+}
+
+p{
+    margin: 20px;
+    text-align: justify;
+}
+
+span{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.imageMuestra-1{
+    display: block;
+    margin: 35px auto;
+    width: 470px;
+    height: 100px;
+    background: url(https://www.tutorialesprogramacionya.com/dhtmlya/imagenes/desafio005b.png) no-repeat;
+    border: 1.5px solid #000;
+    border-radius: 15px;
+}
+
+.imageMuestra-2{
+    display: block;
+    margin: 35px auto;
+    width: 600px;
+    height: 600px;
+    background: url(https://www.tutorialesprogramacionya.com/dhtmlya/imagenes/desafio005a.png) no-repeat;
+    border: 1.5px solid #000;
+    border-radius: 15px;
+}
+
+
+/*Estilos para el ejercicio*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    height: 100vh;
+    display: flex;
+    background: #FAFAFA;
+    justify-content: center;
+    align-items: center;
+}
+
+.perro{
+    width: 500px;
+}
+
+.marco{
+    padding: 1rem;
+    background: #FAFAFA;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+}
