@@ -34,15 +34,15 @@ function proximaBandera () {
     b.innerHTML = pregunta;
 
     //Debemos registrar el evento 'click' para cada uno de los cuatro botones y dentro del mismo veriridar si coincide con la bandera correcta, aumentando en uno el contador respectivo y proceder a llamar a 'actualizarResultados' para que se muestre la siguiente bandera:
-    for (let i = 1; i < 4; i++) {
+    for (let i = 1; i <= 4; i++) {
 
         document.querySelector(`#b${i}`).addEventListener('click', evt => {
 
-            if (correctas == `${i-1}`){
+            if (correcta == `${i-1}`){
                 correctas ++;
             }else{
                 incorrectas ++;
-                alert(`Es la bandera de: ${datos[paises[correctas]].name.common}`);
+                alert(`Es la bandera de: ${datos[paises[correcta]].name.common}`);
             }
 
             actualizarResultados();
@@ -70,4 +70,4 @@ fetch("https://restcountries.com/v3.1/all")
         datos = bandera;
         actualizarResultados();
     })
-    //.catch(error => console.log(error));
+    .catch(e => console.log(`El error es: ${e}`));
