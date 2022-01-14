@@ -27,11 +27,9 @@ p{
     text-align: justify;
 }
 
-span{
-    font-weight: bold;
-    font-style: italic;
+ul, li{
+    text-align: left;
 }
-
 .imageMuestra-1{
     display: block;
     margin: 35px auto;

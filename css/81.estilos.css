@@ -1,0 +1,60 @@
+/*Estilos definidos por mi para la plantilla del ejemplo*/
+
+.container{
+    background: #FAFAFA;
+    color: #212F3D;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 30px;
+}
+
+small{
+    display: block;
+}
+
+hr{
+    margin: 20px;
+}
+
+h1{
+    margin: 30px auto;
+    text-align: center;
+}
+
+p{
+    margin: 20px;
+    text-align: justify;
+}
+
+ul > li{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.imgMuestra{
+    display: block;
+    margin: 35px auto;
+    width: 500px;
+    height: 670px;
+    background: url(https://www.tutorialesprogramacionya.com/dhtmlya/imagenes/desafio006a.png) no-repeat;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+}
+
+
+/*Estilos definidos para la solución del ejercicio*/
+
+
+#contenedor{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#rango{
+    width: 250px;
+}
+
+
+
+
