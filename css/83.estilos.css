@@ -1,0 +1,39 @@
+/*Estilos definidos por mi para la plantilla del ejemplo*/
+
+.container{
+    background: #FAFAFA;
+    color: #212F3D;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 30px;
+}
+
+small{
+    display: block;
+}
+
+hr{
+    margin: 20px;
+}
+
+h1{
+    margin: 30px auto;
+    text-align: center;
+}
+
+p{
+    margin: 20px;
+    text-align: justify;
+}
+
+span{
+    font-style: italic;
+    font-weight: bold;
+}
+
+select, button{
+    display: block;
+    margin: 20px auto;
+    width: 30%;
+}
+/*Estilos definidos para el ejemplo*/

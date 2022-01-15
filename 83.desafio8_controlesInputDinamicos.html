@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando la libreria jQuery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Importando el favicon -->
+    <link rel="icon" href="https://img.icons8.com/fluency/48/000000/worldwide-location.png" type="image/png">
+
+    <!-- Importando los estilos css -->
+    <link rel="stylesheet" href="./css/83.estilos.css" type="text/css">
+
+    <title>Desafio 8: Generación de controles input en forma dinámica</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Desafio 8: <small>Generación de controles input en forma dinámica</small></h1>
+
+        <p><span>Ejercicio: </span>Confeccionar una página que muestre un control input y mediante un control HTML select permitir que tipo de elemento se creará, cuando se presione un botón crear en forma dinámica el control input seleccionado.</p>
+
+        <p>La interfaz visual a implementar previo a que se presione el botón debe ser</p>
+
+        <p>Luego cuando se presiona el botón crear el control input respectivo y mostrarlo en la página</p>
+
+        <hr>
+
+        <h2>Control input</h2>
+        <select name="" id="seleccion" class="form-control">
+            <option value="seleccionar">seleccionar</option>
+            <option value="text">Texto</option>
+            <option value="button">Button</option>
+            <option value="checkbox">Checkbox</option>
+            <option value="radio">Radio</option>
+            <option value="file">File</option>
+            <option value="password">Password</option>
+            <option value="submit">Submit</option>
+            <option value="range">range</option>
+            <option value="hidden">hidden</option>
+            <option value="date">date</option>
+            <option value="color">color</option>
+            <option value="email">email</option>
+            <option value="month">month</option>
+            <option value="number">number</option>
+            <option value="search">search</option>
+            <option value="tel">tel</option>
+            <option value="url">url</option>
+            <option value="week">week</option>
+        </select>
+
+        <button id="crear">Crear</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="./js/83.desafio8_controlesInputDinamicos.js" type="text/javascript"></script>
+</body>
+</html>

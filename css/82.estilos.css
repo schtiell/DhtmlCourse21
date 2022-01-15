@@ -59,7 +59,6 @@ span{
     margin: 0 auto;
     max-width: 1400px;
     justify-content: center;
-    
 }
 
 .tarjeta{
@@ -78,6 +77,7 @@ span{
 
 .tarjeta p{
     margin: 10px;
-    font-family: cursive;
-    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    text-align: center;
 }
