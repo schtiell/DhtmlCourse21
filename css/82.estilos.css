@@ -1,0 +1,83 @@
+/*Estilos definidos por mi para la plantilla del ejemplo*/
+
+.container{
+    background: #FAFAFA;
+    color: #212F3D;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 30px;
+}
+
+small{
+    display: block;
+}
+
+hr{
+    margin: 20px;
+}
+
+h1{
+    margin: 30px auto;
+    text-align: center;
+}
+
+p{
+    margin: 20px;
+    text-align: justify;
+}
+
+span{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.imgMuestra{
+    display: block;
+    margin: 35px auto;
+    width: 590px;
+    height: 490px;
+    background: url(https://www.tutorialesprogramacionya.com/dhtmlya/imagenes/desafio007a.png) no-repeat;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+}
+
+.imgMuestra2{
+    display: block;
+    margin: 35px auto;
+    width: 763px;
+    height: 770px;
+    background: url(https://www.tutorialesprogramacionya.com/dhtmlya/imagenes/desafio007b.png) no-repeat;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+}
+
+/*Estilos definidos para el ejemplo*/
+
+#datos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1400px;
+    justify-content: center;
+    
+}
+
+.tarjeta{
+    width: 400px;
+    margin: 20px;
+    border: 1px solid #CFD8DC;
+    border-radius: 10px;
+    background: #E8ECEE;
+}
+
+.tarjeta img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tarjeta p{
+    margin: 10px;
+    font-family: cursive;
+    font-size: 1.2rem;
+}
