@@ -10,8 +10,10 @@ DHTML o HTML Dinámico requiere el uso de las tecnologias HTML, CSS Y Javascript
 
 El siguiente apartado hace una descripción de cada uno de los ejercicios realizados. La descripción de cada uno es:
 
-1. 02.getElementById.html, el cual llama a un elemento para cambiar el color y tamaño de de fuente del titulo
+- 02.getElementById.html, el cual llama a un elemento para cambiar el color y tamaño de de fuente del titulo
 
-2. 03.getElementById_2.html, encargado de buscar un elemento con id parrafo para aplicarle distintos tamaños de fuentes
+- 03.getElementById_2.html, encargado de buscar un elemento con id parrafo para aplicarle distintos tamaños de fuentes
 
-3. 04.childNodes_children.html, se utilizan las propiedades childNode para conocer el numero de hijos que posee el elemento padres (nodos de texto y elementos), mientras que children devuelve unicamente le numero de elemento hijos
+- 04.childNodes_children.html, se utilizan las propiedades childNode para conocer el numero de hijos que posee el elemento padres (nodos de texto y elementos), mientras que children devuelve unicamente le numero de elemento hijos
+
+- 05.childNodes_children_2.html, otro ejercicio para contar los nodos de tipo elemento y los nodos de tipo texto.

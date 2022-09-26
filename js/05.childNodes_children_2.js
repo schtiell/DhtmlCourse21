@@ -48,3 +48,27 @@ function calcularElementos(){
     console.log(`El total de elementos del container-1 es: ${elementos1.children.length}`);
     console.log(`El total de elementos del container-2 es: ${elementos2.children.length}`);
 }
+
+
+function calcularElementosLista(){
+
+    let lista = document.getElementById("listaNoOrdenada");
+    console.log(lista);
+
+    let contadorNodosElemento = 0;
+    let contadorNodosTexto = 0;
+
+    for (let i = 0; i < lista.childNodes.length; i++) {
+        
+        if (lista.childNodes[i].nodeType === Node.TEXT_NODE) {
+            contadorNodosTexto += 1;
+        }else {
+            contadorNodosElemento += 1;
+        }
+        
+    }
+
+    console.log(contadorNodosTexto);
+    console.log(contadorNodosElemento);
+    
+}
