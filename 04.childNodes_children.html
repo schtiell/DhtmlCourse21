@@ -4,20 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/03.styles.css" type="text/css">
+
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
+
     <title>propiedades: childNodes & children</title>
+
 </head>
 <body>
-    <h1>propiedades: childNodes & children</h1>
+    <div class="container">
 
-    <div id="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quaerat!</p>
-        <p>Necessitatibus accusamus labore molestiae nisi consectetur voluptate maiores</p>
-        <p>ducimus quibusdam eaque adipisci similique, qui tenetur modi ex provident itaque aliquid.</p>
+        <h1>
+            DHTML: HTML Dinámico
+            <small>propiedades: childNodes & children</small> 
+        </h1>
+
+        <hr>
+
+        <p>Cada nodo tiene un solo nodo padre, pero puede tener muchos hijos.</p>
+
+        <div class="imagen"></div>
+
+        <p>En este ejemplo el nodo body tiene 4 hijos, la marca h1 tiene 1 hijo, lo mismo cada marca li tienen un hijo. Los nodos que no tienen descendientes son los nodos hoja.</p>
+
+        <p>El DOM provee a cada nodo de un array el cual almacena la referencia a cada uno de sus nodos hijos, la propiedad se llama:</p>
+
+        <pre>childNodes</pre>
+
+        <p>Este array almacena una referencia a cada nodo hijo.</p>
+
+        <p>Los nodos pueden ser de tipo: ELEMENT_NODE (nodo elemento) o TEXT_NODE (nodo texto).</p>
+
+        <div class="container">
+
+            <h2>Ejercicios: </h2>
+
+            <hr>
+
+            <p><span>Ejercicio: </span> Confeccionar una página que contenga un div con tres párrafos. Luego acceder a la propiedad childNodes y verificar cuantos hijos tiene y de que tipo de nodos se tratan.</p>
+
+            <div id="contenedorPadre">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quaerat!</p>
+                <p>Necessitatibus accusamus labore molestiae nisi consectetur voluptate maiores</p>
+                <p>ducimus quibusdam eaque adipisci similique, qui tenetur modi ex provident itaque aliquid.</p>
+            </div>
+    
+            <button class="btn btn-primary" type="button" onclick="calcularHijos()">Calcular hijos</button>
+            <button class="btn btn-primary" type="button" onclick="calcularNodosElementos()">calcularElementos</button>
+        </div>
     </div>
-
-    <button type="button" onclick="calcularHijos()">Calcular hijos</button>
-    <button type="button" onclick="calcularElementos()">calcularElementos</button>
-
     <script src="./js/03.childNodes_children.js"></script>
 </body>
 </html>
