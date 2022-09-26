@@ -1,9 +1,39 @@
-#titulo{
+.container{
+    display: block;
     text-align: center;
+    background-color: #FAFAFA;
+    /*color: #212F3D;*/
+    font-size: 16px;
+    padding: 20px 30px;
 }
 
-#boton1,
-#boton2{
+small{
+    display: block;
+    color: #8C9193;
+}
+
+hr{
+    margin: 40px;
+}
+
+h1{
+    margin: 30px auto;
     text-align: center;
-    width: 200px;
+    font-weight: bold;
+}
+
+p{
+    margin: 20px;
+    text-align: justify;
+}
+
+pre{
+    font-style: italic;
+    font-weight: bold;
+    margin: 40px auto;
+}
+
+button{
+    display: block;
+    margin: 50px 30px;
 }
