@@ -5,17 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/02.style.css" type="text/css">
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/02.style_2.css" type="text/css">
+
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
+
     <title>document.getElementById</title>
 </head>
 <body>
-    <h1>document.getElementById()</h1>
 
-    <p id="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste alias modi quibusdam repellendus, porro nostrum pariatur, ipsa enim earum obcaecati inventore illum totam asperiores, dolorum sequi consequatur velit eos voluptate.</p>
+    <div class="container">
 
-    <button id="botton1" onclick="fuentePequena()">Fuente pequeña</button>
-    <button id="botton2" onclick="fuenteMediana()">FUente mediana</button>
-    <button id="botton3" onclick="fuenteGrande()">Fuente grande</button>
+        <h1>
+            DHTML: HTML Dinámico
+            <small>Método: getElementById( )</small>   
+        </h1>
+
+        <hr>
+
+        <p id="parrafo">Permitir cambiar el tamaño de la fuente de un párrafo. Para esto crear tres botones:</p>
+            <ul>
+                <li>fuente pequeña (10)</li>
+                <li>fuente mediana(13)</li>
+                <li>fuente grande(20)</li>
+            </ul>
+    
+
+        <button id="botton1" class="btn btn-primary" onclick="fuentePequena()">Fuente pequeña</button>
+        <button id="botton2" class="btn btn-primary" onclick="fuenteMediana()">FUente mediana</button>
+        <button id="botton3" class="btn btn-primary" onclick="fuenteGrande()">Fuente grande</button>
+
+    </div>
 
     <script src="./js/02.getElementById_2.js"></script>
 </body>

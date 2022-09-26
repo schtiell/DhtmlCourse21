@@ -8,6 +8,8 @@ DHTML o HTML Dinámico requiere el uso de las tecnologias HTML, CSS Y Javascript
 
 ## Descripción de los ejercicios:
 
-El siguiente apartado hace una descripción de cada uno de los ejemplos realizados.
+El siguiente apartado hace una descripción de cada uno de los ejercicios realizados. La descripción de cada uno es:
 
-1. El primer ejemplo es: 02.getElementById. El cual llama a un elemento para cambiar el color y tamaño de de fuente del titulo
+1. 02.getElementById.html, el cual llama a un elemento para cambiar el color y tamaño de de fuente del titulo
+
+2. 03.getElementById_2.html, encargado de buscar un elemento con id parrafo para aplicarle distintos tamaños de fuentes

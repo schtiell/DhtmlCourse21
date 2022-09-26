@@ -31,3 +31,12 @@ button{
     display: block;
     margin: 10px 30px;
 }
+
+ul{
+    list-style-type: disclosure-closed;
+    list-style-position: inside;
+}
+
+li{
+    text-align: left;
+}
