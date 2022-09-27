@@ -19,3 +19,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 05.childNodes_children_2.html, otro ejercicio para contar los nodos de tipo elemento y los nodos de tipo texto.
 
 - 06.childNodes_nodeValues.html y 07.childNodes_nodeValues.html se usa la propiedad nodeValue para modificar la un TEXT_NODE de un elemento del DOM.
+
+- 08.parentNode.html 08.parentNode_2.html, ejemplos creados para obtener el nodo padre de un elemento del DOM. Al obtener el nodo padre es posible afectar a cada uno de los nodos hijos.

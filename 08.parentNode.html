@@ -5,23 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Importando los estilos css -->
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+    <!-- Importando el css3 -->
     <link rel="stylesheet" href="./css/08.styles.css" type="text/css">
-    <title>Accediendo al parent Node</title>
+    
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
+
+    <title>Accediendo a un nodo padre: parentNode</title>
 </head>
 <body>
-    <h1>Parent Node</h1>
-
     <div class="container">
-        <p id="parrafo1">Si tenemos la referencia a un nodo podemos obtener fácilmente la referencia del nodo padre mediante la propiedad parentNode.</p>
+        
+        <h1>
+            DHTML: HTML Dinámico:
+            <small>parentNode</small>
+        </h1>
 
-        <p>Veamos un ejemplo sencillo donde obtenemos la referencia de un párrafo contenido en un div. Luego por medio de esta referencia obtenemos la referencia al div y cambiamos el color de fondo del div.</p>
+        <hr>
+
+        <div class="container-parrafo">
+
+            <p id="parrafo1">Si tenemos la referencia a un nodo podemos obtener fácilmente la referencia del nodo padre mediante la propiedad parentNode.</p>
+
+            <p>Veamos un ejemplo sencillo donde obtenemos la referencia de un párrafo contenido en un div. Luego por medio de esta referencia obtenemos la referencia al div y cambiamos el color de fondo del div.</p>
+        </div>
+
+        <p id="explicacion">
+            El div con clase <span>container-parrafo</span> es el nodo padre de 2 parrafos por lo que al obtener el id de cualquiera de los 2 parrafos podemos saber que elemento es el nodo padre utilizando la propiedad parentNode
+        </p>
+
+        <button class="btn btn-primary" onclick="cambiarColorDiv()">Cambiar color!!</button>
     </div>
-
-    <p id="explicacion">
-        El div con clase container es el nodo padre de 2 parrafos por lo que al obtener el id de cualquiera de los 2 parrafos podemos saber que elemento es el nodo padre utilizando la propiedad parentNode
-    </p>
-    <button type="submit" value="cambiarColorDiv" onclick="cambiarColorDiv()">Cambiar color!!</button>
 
     <!-- Importando el js -->
     <script src="./js/08.parentNode.js"></script>

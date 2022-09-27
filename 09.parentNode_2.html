@@ -5,23 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Importando los estilos css -->
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+    <!-- Importando el css3 -->
     <link rel="stylesheet" href="./css/08.styles.css" type="text/css">
-    <title>parentNode</title>
+    
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
+
+    <title>Accediendo a un nodo padre: parentNode</title>
 </head>
 <body>
-    <h1>Propiedad parentNode</h1>
+    <div class="container">
 
-    <div id="container">
-        <p id="parrafo1"> Problema:Crear una página html que contenga tres párrafos y definir su propiedad id para el primero de ellos. Cambiar el tamaño de fuente por '40px' para todos los elementos de la página.</p>
+        <h1>
+            DHTML: HTML Dinámico:
+            <small>Propiedad: parentNode</small>
+        </h1>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, dignissimos repellendus! Distinctio nisi mollitia necessitatibus suscipit quo magni ratione ut, quisquam amet labore saepe, officia nostrum beatae quas vitae id. </p>
+        <hr>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aperiam ea debitis, possimus sint dignissimos cupiditate eos illo ex necessitatibus libero nulla delectus id magni. Ipsa fugiat veritatis tempore iste?</p>
+        <div class="container" id="container">
+        
+            <p id="parrafo1"> Problema: Crear una página html que contenga tres párrafos y definir su propiedad id para el primero de ellos. Cambiar el tamaño de fuente por '40px' para todos los elementos de la página.</p>
 
-        <button type="submit" value="cambiarFuente" onclick="cambiarFuente()">cambiar tamaño fuente</button>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, dignissimos repellendus! Distinctio nisi mollitia necessitatibus suscipit quo magni ratione ut, quisquam amet labore saepe, officia nostrum beatae quas vitae id. </p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aperiam ea debitis, possimus sint dignissimos cupiditate eos illo ex necessitatibus libero nulla delectus id magni. Ipsa fugiat veritatis tempore iste?</p>
+
+            <button class="btn btn-primary" onclick="cambiarFuente()">cambiar tamaño fuente</button>
     </div>
 
+    </div>
     
 
     <!-- Importando la funcionalidad de js -->
