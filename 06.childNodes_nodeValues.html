@@ -20,7 +20,7 @@
     <!-- cdn favicon -->
     <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
 
-    <title>childNodes_nodeValues</title>
+    <title>Modificando los nodos del DOM</title>
 </head>
 <body>
     <div class="container">
@@ -36,17 +36,22 @@
 
         <div id="imagen"></div>
 
+        <p>En este árbol de nodos se puede identificar que todos los rectángulos que no tienen bordes redondeados son nodos texto.</p>
 
+        <p>Ahora para acceder a dichos nodos podemos hacerlo a partir del nodo padre con la propiedad childNodes.</p>
 
-
-        <div>
+        <div class="container ejercicio">
 
             <h2 id="titulo">Aqui debe ir un titulo... que será cambiado con js!!!</h2>
 
-            <p>Es importante notar que el texto contenido en un elemento de HTML no pertenece al nodo, sino que se encuentra en otro nodo especial que se llama nodo texto (TEXT_NODE)</p>
+            <p><span>Ejercicio: </span>El siguiente ejemplo cambia el texto que contiene el elemento "h1" accediendo al nodo de texto.</p>
+
         </div>
+
+        <p>Se obtiene la referencia al elemento h1 por medio de la función <span>getElementById</span>, luego mediante la propiedad childNodes se accede al primer componente que tiene la referencia al nodo de tipo texto. Por último se asigna el nuevo texto al elemento h1 utilizando la propiedad nodeValue.</p>
     
         <button class="btn btn-primary" onclick="cambiarTitulo()">Cambiar Titulo</button>
+
     </div>
     <script src="./js/06.childNodes_nodeValues.js"></script>
 </body>

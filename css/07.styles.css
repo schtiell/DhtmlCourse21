@@ -27,26 +27,11 @@ h2{
     font-weight: bold;
 }
 
-#imagen{
-    display: block;
-    margin: 20px auto;
-    height: 500px;
-    width: 600px;
-    background-image: url(https://www.tutorialesprogramacionya.com/dhtmlya/imagenes/dibujo03.jpg);
-    background-repeat: no-repeat;
-}
-
 p{
     margin: 20px;
     text-align: justify;
 }
 
-pre{
-    margin: 40px;
-    text-align: justify;
-    font-weight: bold;
-    font-style: italic;
-}
 
 span{
     font-weight: bold;

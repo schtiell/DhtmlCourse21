@@ -17,3 +17,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 04.childNodes_children.html, se utilizan las propiedades childNode para conocer el numero de hijos que posee el elemento padres (nodos de texto y elementos), mientras que children devuelve unicamente le numero de elemento hijos
 
 - 05.childNodes_children_2.html, otro ejercicio para contar los nodos de tipo elemento y los nodos de tipo texto.
+
+- 06.childNodes_nodeValues.html y 07.childNodes_nodeValues.html se usa la propiedad nodeValue para modificar la un TEXT_NODE de un elemento del DOM.
