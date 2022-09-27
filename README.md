@@ -21,3 +21,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 06.childNodes_nodeValues.html y 07.childNodes_nodeValues.html se usa la propiedad nodeValue para modificar la un TEXT_NODE de un elemento del DOM.
 
 - 08.parentNode.html 08.parentNode_2.html, ejemplos creados para obtener el nodo padre de un elemento del DOM. Al obtener el nodo padre es posible afectar a cada uno de los nodos hijos.
+
+- 10.siblingNode.html 11.siblingNode_2.html, ejemplos creados para obtener los nodos hermanos de un elemento del DOM

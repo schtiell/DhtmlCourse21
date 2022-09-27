@@ -4,28 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accediendo a nodos hermanos</title>
+
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/09.styles.css" type="text/css">
+    
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
+    <title>Accediendo a nodos hermanos: </title>
 </head>
 <body>
-    <h1 class="titiulo">Accediendo a un nodo hermano (nextSibling y previousSibling - nextElementSibling y previousElementSibling)</h1>
+    
+    <div class="container">
 
-    <div class="continaer">
-        <p id="parrafo1">Si tenemos la referencia de un nodo podemos fácilmente acceder a los otros nodos que se encuentran en la misma altura dentro del árbol que genera el DOM.</p>
+        <h1>
+            DHTML: HTML Dinámico:
+            <small>Accediendo a nodos hermanos: nextSibling y previousSibling, nextElementSibling y previousElementSibling.
+            </small>
+        </h1>
 
-        <p>Veamos con un ejemplo como obtenemos la referencia de los nodos hermanos, implementaremos una página que contenga tres párrafos y sólo disponemos el id del primero de ellos.</p>
+        <hr>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fugiat quis blanditiis maxime dolore sit aut consequuntur nostrum. Exercitationem velit nesciunt magnam saepe rerum sunt iusto! Officiis fugiat perferendis accusantium.</p>
+        <p>Si se tiene la referencia de un nodo se puede fácilmente acceder a los otros nodos que se encuentran en la misma altura dentro del árbol que genera el DOM.</p>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quo dolor nemo delectus nisi, nam ut veritatis sapiente excepturi quam cupiditate modi nihil ipsa cumque illum quidem accusamus eius. Recusandae!</p>
-
-        <button  type="submit" value="acceder a los 4 parrafos" onclick="accederParrafos()">Proximo parrafo</button>
-
-        <button  type="submit" id="btn-anterior" value="acceder a los 4 parrafos" onclick="accederParrafosAnteriores()">Parrafo Anterior</button>
+        <p>La propiedad nextSibling retorna la referencia del nodo hermano que se encuentra inmediatamente más abajo en el archivo HTML, pero a la misma altura si lo pensamos al archivo HTML como un árbol. 
+            
+        <p>También existe una propiedad llamado previusSibling que retorna la referencia del nodo hermano que se encuentra inmediatamente más arriba en el archivo HTML, <span>nextSibling y previusSibling</span> retornan <span>null</span> en caso de no existir más nodos en dicho nivel.</p>
         
+        <p><span>Importante: </span>Hay que tener en cuenta es que si hay un salto de línea entre dos párrafos lo interpreta y crea un nodo de texto y la propiedad nextSibling y previusSibling lo accede.</p>
+
+        <p><span>Por ejemplo</span>: para obtener la referencia de los nodos hermanos, se implementará una página que contenga tres párrafos y sólo disponemos el id del primero de ellos.</p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="container ejercicio">
+            
+                    <h2>
+                        Ejercicio:
+                        <small>nextSibling</small>
+                    </h2>
+        
+                    <hr>
+        
+                    <p id="parrafo1">Parrafo 1: contenido</p>
+        
+                    <p>Parrafo 2: contenido</p>
+            
+                    <p>Parrafo 3: contenido</p>
+        
+                </div>
+        
+                <button class="btn btn-primary" onclick="accederParrafos()">Proximo parrafo</button> 
+            </div>
+
+            <div class="col-md-6">
+                <div class="container ejercicio">
+
+                    <h2>
+                        Ejercicio:
+                        <small>previousSibling</small>
+                    </h2>
+                    
+                    <hr>
+
+                    <p>Parrafo 1: contenido</p>
+        
+                    <p id="parrafo2"></p>
+            
+                    <p id="parrafo3">Parrafo 3: contenido</p>
+
+                    <div>elemento div</div>
+                    
+                    <button  class="btn btn-primary" id="btn" onclick="accederParrafosAnteriores()">Parrafo Anterior</button>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <p>La direncia entre la propiedad <span>nextSibling y nextElementSibling</span> es que la primera retorna al nodo proximo ya sea TEXT_NODE o ELEMENT_NODE, mientras que el segundo solo retorno los nodos de tipo elemento</p>
+
+        <p>Lo mismo que la propiedad <span>previousSibling y previousElementSibling</span> la segunda unicamente retorna nodos de tipo elemento, y la primera retorna nodos tipo elemento y tipo texto</p>
+
     </div>
-
-
-    <p id="enBlanco"></p>
 
     <!-- Importando el js -->
     <script src="./js/10.siblingNode.js"></script>
