@@ -4,29 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/14.styles.css" type="text/css">
+    
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
+
+
     <title>Ejercicio getElementsByTagName</title>
 </head>
 <body>
-    <h1>getElementsByTagName</h1>
 
-    <div>
-        <p>Problema:Confeccionar una página que fije el color rojo a todos los párrafos.</p>
+    <div class="container">
+
+        <h1>
+            DHTML: HTML Dinámico
+            <small>Obteniendo conjunto de marcas: getElementsByTagName</small>
+        </h1>
+
+        <hr>
+
+        <p><span>Problema:</span> Confeccionar una página que fije el color rojo a todos los párrafos.</p>
+    
+        <div id="container-1">
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  .</p>
+            <p>Assumenda similique rem ab modi non libero aperiam deleniti qui voluptates accusamus</p>
+            <p>quis maiores obcaecati quos culpa consectetur, sint iste incidunt. Saepe</p>
+        </div>
+
+        <div id="container-2">
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Quaerat, nam, rerum reiciendis sit maxime ea assumenda magni rem nobis architecto at earum ipsam.</p>
+            <p>umquam iure illum consequatur recusandae eligendi perferendis!</p>
+        </div>
+    
+        <button class="btn btn-primary" onclick="colorearParrafos()">colorear parrafos</button>
+    
+        <button class="btn btn-primary" onclick="esconderParrafos()">Esconder parrafos </button>
     </div>
-
-    <div id="container-1">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  .</p>
-        <p>Assumenda similique rem ab modi non libero aperiam deleniti qui voluptates accusamus</p>
-        <p>quis maiores obcaecati quos culpa consectetur, sint iste incidunt. Saepe</p>
-    </div>
-    <div id="container-2">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <p>Quaerat, nam, rerum reiciendis sit maxime ea assumenda magni rem nobis architecto at earum ipsam.</p>
-        <p>umquam iure illum consequatur recusandae eligendi perferendis!</p>
-    </div>
-
-    <button type="submit" value="" onclick="colorearParrafos()">colorear parrafos</button>
-
-    <button type="submit" value="" onclick="esconderParrafos()">Esconder parrafos </button>
 
     <!-- Importando js -->
     <script src="./js/14.getElementsByTagName.js"></script>
