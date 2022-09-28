@@ -5,34 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Importando la libreria de jQuery -->
-    <script src="./js/jquery-3.6.0.min.js"></script>
-
-    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/15.styles.css" type="text/css">
+    
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
 
-    <!-- Aplicando stilos.css -->
-    <style>
-        html,
-        body{
-            margin: 20px 20px; 
-        }
-    </style>
-
-    <title>Agregar un nodo de texto</title>
+    <title>Agregando nodos de texto: appendChild & createTextNode</title>
 </head>
 <body>
-    <h1>Agregar un nodo de texto, appendChild - createTextNode </h1>
 
     <div class="container">
-        <p id="parrafo">
-            Texto inicial........
-        </p>
-    </div>
 
-    <button type="submit" value="parrafoDinamico" onclick="agregarParrafo()">Agregar parrafo</button>
+        <h1>
+            DHTML: HTML Dinámico:
+            <small>Agregando nodos de texto: appendChild - createTextNode</small>
+        </h1>
+
+        <hr>
+
+        <p>Para la creación de un nodo de texto disponemos del siguiente método de la clase document:</p>
+
+        <pre>let nt = document.createTextNode('Texto del nodo');</pre>
+
+        <p>Para añadirlo luego a un párrafo por ejemplo debemos llamar al método: <span>appendChild:</span></p>
+
+        <pre>let nparrafo = document.getElementById('parrafo');<br>nparrafo.appendChild(nt);</pre>
+
+
+        <div class="container">
+
+            <p><span>Ejemplo:</span> cada vez que se presione un botón se añada un nodo de texto a un párrafo mostrando cuántos nodos de texto se han añadido:</p>
+
+            <p id="parrafo">...</p>
+    
+            <button class="btn btn-primary" onclick="agregarParrafo()">Agregar parrafo</button>
+        </div>
+    </div>
 
     <!-- Importando el archivo js -->
     <script src="./js/16.appendChild.js"></script>

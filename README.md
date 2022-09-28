@@ -27,3 +27,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 12.first_last_child.html 13.first_last_child.html, accediendo al primer y ultimo nodo hijo de un elemento del DOM.
 
 - 14.getElementsByTagName.html 15.getElementsByTagName_2.html, invocando un conjunto de elementos del DOM por nombre de la etiqueta HTML. el metodo getElementsByTagName retorna un array con los datos.
+
+- 16.appenChild.html 17.appenChild_".html, creando nodos de texto con la propiedad createTextNode y agregandolos a un elemento del DOM con la propiedad appenChild
