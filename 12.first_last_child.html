@@ -4,25 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/11.styles.css" type="text/css">
+    
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
+
     <title>firstChild & lastChild</title>
 </head>
 <body>
-    <h1> firstChild & lastChild</h1>
 
-    <p>Otra forma de acceder al primer y último nodo hijo es por medio de las propiedades firstChild (retorna la referencia del primer hijo, es lo mismo que poner obj.childNodes[0]) y obj.lastChild (retorna la referencia del último hijo, es sinónimo de poner obj.childNodes[obj.childNodes.length-1])</p>
+    <div class="container">
 
-    <p>dispondremos tres párrafos dentro de un div. Acceder al primer hijo del div y luego avanzando con el método nextSibling llegar hasta el final de la lista de hermanos, mostrar el texto de cada párrafo.</p>
+        <h1>DHTML: HTML Dinámico:
+            <small>Primer y ultimo hijo: firstChild & lastChild</small>
+        </h1>
 
-    <div id="parrafos">
-        <!-- Este es un comentario -->
-        <p>Este es el primer parrafo</p>
-        <p>Este es el segundo parrafo</p>
-        <p>Este es el tercer parrafo</p>
+        <hr>
+
+        <p>Otra forma de acceder al primer y último nodo hijo es por medio de las propiedades:</p>
+
+        <ul>
+            <li><span>firstChild:</span> retorna la referencia del primer hijo ELEMENT_NODE o TEXT_NODE, es lo mismo que poner obj.childNodes[0]</li>
+ 
+            <li><span>lastChild:</span> retorna la referencia del último hijo ELEMENT_NODE o TEXT_NODE, es sinónimo de poner obj.childNodes[obj.childNodes.length-1] </li>
+
+            <li><span>firstElementChild:</span> retorna la referencia del primer ELEMENT_NODE hijo</li>
+
+            <li><span>lastElementChild:</span> retorna la referencia del último ELEMENT_NODE hijo </li>
+        </ul>
+    
+        <div class="container ejercicio">
+
+            <h2>
+                Ejercicio
+            </h2>
+
+            <hr>
+
+            <p>Se dispone de tres párrafos dentro de un div. Acceder al primer hijo del div y luego avanzando con el método nextSibling llegar hasta el final de la lista de hermanos, mostrar el texto de cada párrafo.</p>
+    
+            <div id="parrafos">
+                <!-- Este es un comentario -->
+                <p> 1. Este es el primer parrafo</p>
+                <p> 2. Este es el segundo parrafo</p>
+                <p> 3. Este es el tercer parrafo</p>
+            </div>
+
+            <p><span>El resultado se muestra en consola</span></p>
+    
+        <button class="btn btn-primary" onclick="obtenerParrafo()">TEXT & ELEMENT Nodes</button>
+            
+        </div>
+    
+        <button class="btn btn-primary" onclick="obtenerElementosParrafo()">ELEMENT Nodes only</button>
     </div>
-
-    <button type="submit" onclick="obtenerParrafo()">Obtener todos los hermanos</button>
-
-    <button type="submit" onclick="obtenerElementosParrafo()">Obtener todos los elementos hermanos</button>
 
     <!-- importando el js -->
     <script src="./js/12.first_last_child.js"></script>

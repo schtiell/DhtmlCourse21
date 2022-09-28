@@ -23,3 +23,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 08.parentNode.html 08.parentNode_2.html, ejemplos creados para obtener el nodo padre de un elemento del DOM. Al obtener el nodo padre es posible afectar a cada uno de los nodos hijos.
 
 - 10.siblingNode.html 11.siblingNode_2.html, ejemplos creados para obtener los nodos hermanos de un elemento del DOM
+
+- 12.first_last_child.html 13.first_last_child.html, accediendo al primer y ultimo nodo hijo de un elemento del DOM.
