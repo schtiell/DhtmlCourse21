@@ -31,3 +31,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 16.appenChild.html 17.appenChild_".html, creando nodos de texto con la propiedad createTextNode y agregandolos a un elemento del DOM con la propiedad appenChild
 
 - 18.removeChild.html 19.removeChild_2.html, creando nodos de texto para agregarlos a nodos elementos, verificando si el nodo padre tiene nodos hijos con el metodos hasChildNodes() para eliminarlos con la propiedad removeChild.
+
+- 20.creandoElementos.html y 21.creandoElementos.html, muestran el funcionamiendo del metodo createElement, para crear etiquetas HTML, listo para crear nodos texto para agregarlos a estos nodos tipo elemento.
