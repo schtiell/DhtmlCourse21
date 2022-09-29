@@ -37,3 +37,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 20.creandoElementos.html y 21.creandoElementos.html, muestran el funcionamiendo del metodo **createElement()**, para crear etiquetas HTML, listo para crear nodos texto para agregarlos a estos nodos tipo elemento.
 
 - 22.insertBefore.html 23.insertBefore_2.html, muestran la forma de utilizar el metodo **insertBefore()** para insertar nodos antes del nodo utilizado como referencia
+
+- 24.removerElement.html 25.removerElement.html, utilizan el motodo removeChild para eliminar un ELEMENT_NODE del DOM

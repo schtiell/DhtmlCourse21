@@ -1,38 +1,32 @@
 
 var removerPrimerElemento = function () {
 
-    //console.log("Elemento removido");
-
     //El elemento a eliminar se obtiene a traves de contenedor padre
-    let parrafo = document.getElementById("container");
+    let contenedorPadre = document.getElementById("contenedorPadre");
 
-    if (parrafo.children.length > 0){
+    if (contenedorPadre.children.length > 0){
 
-        let valorEliminado = parrafo.children[0].innerText;
-        console.log(valorEliminado);
-        parrafo.removeChild(parrafo.children[0]);
+        let primerElemento = contenedorPadre.firstElementChild;
 
-        // for (let i = 0;  i < parrafo.children.length; i++) {
-        //     let valorEliminado = parrafo.children[i].innerText;
-        //     console.log(valorEliminado);
-
-        // }
+        console.log(primerElemento.innerHTML);
+        
+        contenedorPadre.removeChild(primerElemento);
 
     }else{
         console.log("El contenedor no tiene nodos hijo")
-    }
+    }   
 
 }
 
 
 let removerUltimoElemento = function () {
 
-    let parrafos = document.getElementById("container");
+    let contenedorPadre = document.getElementById("contenedorPadre");
 
-    if (parrafos.children.length > 0) {
+    if (contenedorPadre.children.length > 0) {
 
         //Eliminando los nodos elementos desde el ultimo al primero
-        parrafos.removeChild(parrafos.children[parrafos.children.length -1]);
+        contenedorPadre.removeChild(contenedorPadre.children[contenedorPadre.children.length -1]);
 
     }else{
 
@@ -43,26 +37,23 @@ let removerUltimoElemento = function () {
 
 let removerElementoEspecifico = function () {
 
-    //console.log("elemento especifico removido");
+    let opcion = document.getElementById("opcion").value;
 
-    let no_parrafo = document.getElementById("inputDel").value;
+    opcion = opcion -1;
 
-    //console.log(no_parrafo);
+    let contenedor = document.getElementById("contenedorParrafos");
 
-    parrafos = document.getElementById("container");
+    if (contenedor.children.length > 0)  {
 
-    if (no_parrafo < parrafos.children.length)  {
-
-        if (parrafos.children.length > 0) {
+        if ( opcion < contenedor.children.length) {
             
-            parrafos.removeChild(parrafos.children[no_parrafo]);
+            contenedor.removeChild(contenedor.children[opcion]);
 
         }else{
-            console.log("No hay hijos en este parentNode");
+            console.log("opcion no valida");
         }
-        
     }else{
 
-        console.log("opcion no valida");
+        console.log("No hay hijos en este parentNode");
     }
 }
