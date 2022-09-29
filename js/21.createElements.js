@@ -23,12 +23,17 @@ function agregarElementosLista() {
 
         let parrafo = document.getElementById("parrafo");
 
-        let texto = document.createTextNode("Ya no puedes añadir mas elementos a la lista");
-        
-        parrafo.appendChild(texto);
+        // Si el ELEMENT_NODE no tiene hijos
+        if (!parrafo.hasChildNodes()) {
+
+            let texto = document.createTextNode("Ya no puedes añadir mas elementos a la lista");
+
+            parrafo.appendChild(texto);
     
-        parrafo.style.color = "red";
-    
-        console.log("Solo se pueden agregar 5 elementos a la lista");
+            parrafo.style.color = "red";
+        }else{
+
+            console.log("Solo se pueden agregar 5 elementos a la lista");
+        }
     }
 }
