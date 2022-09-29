@@ -10,6 +10,8 @@ DHTML o HTML Dinámico requiere el uso de las tecnologias HTML, CSS Y Javascript
 
 El siguiente apartado hace una descripción de cada uno de los ejercicios realizados. La descripción de cada uno es:
 
+- 01.DocumentObjectModel.html es una introduccion al manejo de todos los objetos que componen un sitio web. En el DOM todos los elementos HTML son organizados como un arbol de nodos.
+
 - 02.getElementById.html, el cual llama a un elemento para cambiar el color y tamaño de de fuente del titulo
 
 - 03.getElementById_2.html, encargado de buscar un elemento con id parrafo para aplicarle distintos tamaños de fuentes
