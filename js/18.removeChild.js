@@ -1,18 +1,11 @@
-console.log('removeChild');
-
 
 let contador = 1;
 
-
 var agregarElemento = function () {
 
-    //console.log("Elemento agregado!!!");
-
-    let salto = "\n";
-
-    let textNode = document.createTextNode(` ${contador}: Nodo de texto creado ${salto}`);
-
     let parrafo = document.getElementById('parrafo');
+
+    let textNode = document.createTextNode(`Nodo de texto creado: ${contador}`);
 
     parrafo.appendChild(textNode);
 
@@ -23,16 +16,16 @@ var agregarElemento = function () {
 
 var eliminarElemento = function () {
 
-    // console.log("Elemento eliminado!!!");
 
     let parrafo = document.getElementById("parrafo");
 
 
-    //hasChildNodes() retorna true si el nodo tiene hijos (sean de tipo texto o de tipo elemento)
+    //hasChildNodes() retorna true si el nodo tiene nodos hijos (TEXT_NODE Y ELEMENT_NODE)
     if (parrafo.hasChildNodes()){
 
         //obtiene el ultimo elemento hijo
         parrafo.removeChild(parrafo.lastChild);
+        console.log(parrafo.childNodes.length);
 
         contador -= 1;
     }else{

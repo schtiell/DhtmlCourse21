@@ -1,32 +1,41 @@
-console.log("removechild");
+let contador = 0;
 
-let contador = 1;
+// Funcion para agregar elementos a la lista
+function agregarNodos() {
+    
+    // Referencia a la lista "<ul>"
+    let lista = document.getElementById("listaNoOrdenada");
 
-let agregar = function () {
+    // Se crea un ELEMENT_NODE html "<li>"
+    let elemento = document.createElement("li")
 
-    let textNode = document.createTextNode(`${contador}: Nodo de texto.`);
+    // Se crea un TEXT_NODE 
+    let texto = document.createTextNode(`Elemento de la lista: ${contador}`);
 
-    let parrafo = document.getElementById("parrafo");
+    // Se agrega el TEXT_NODE al ELEMENT_NODE
+    elemento.appendChild(texto);
 
-    //parrafo.innerText = " ";
+    // Se agrega el ELEMENT_NODE a la lista no ordenada
+    lista.appendChild(elemento);
 
-    parrafo.appendChild(textNode);
-
-    contador += 1;
+    contador +=1;
 }
 
-let eliminar = function() {
+// Se eliminan los elementos de la lista no ordenada
+let eliminarNodos = function() {
 
-    let parrafo = document.getElementById("parrafo");
+    let lista = document.getElementById("listaNoOrdenada");
 
-    if (parrafo.hasChildNodes()){
-
-        //firstChild se posiciona en el primer nodo hijo y a partir de ahi comienza a eliminar los demas nodos.
-        parrafo.removeChild(parrafo.firstChild);
+    if (lista.hasChildNodes() && contador > 0) {
+        
+        lista.removeChild(lista.firstChild);
 
         contador -= 1;
 
-    }else{
-        console.log("No quedan nodos hijo que eliminar");
-    }
+        console.log(contador);
+        
+    } else {
+        
+        console.log("La lista no tienen nodos hijo");
+    } 
 }

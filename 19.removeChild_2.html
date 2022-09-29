@@ -5,38 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Importando la libreria de jQuery -->
-    <script src="./js/jquery-3.6.0.min.js"></script>
-
-    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+   
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+   
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/17.styles.css" type="text/css">
+   
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
 
-    <style>
-        html,
-        body{
-            margin: 10px;
-            padding: 10px;
-        }
-
-        button{
-            margin: 10px;
-        }
-
-    </style>
-
-    <title>removeChild() y hasChildNodes()</title>
+    <title>Verificar y Eliminar nodos: removeChild & hasChildNodes</title>
 
 </head>
 <body>
-    <h1>removeChild() y hasChildNodes()</h1>
+    <div class="container">
 
-    <p id="parrafo">......</p>
+        <h1>
+            DHTML: HTML Dinámico:
+            <small>Eliminar y verificar nodos hijo: removeChild & hasChildNodes</small>
+        </h1>
 
-    <button type="submit" class="btn btn-danger" onclick="eliminar()">Eliminar</button>
-    <button type="submit" class="btn btn-primary" onclick="agregar()">Agregar</button>
+        <hr>
 
+        <p><span>Ejercicio: </span>Implementar un programa que permita añadir nodos de texto y eliminar nodos de texto de un párrafo (eliminar siempre el primer hijo de la lista)</p>
+
+        <p id="parrafo">......</p>
+
+        <ul id="listaNoOrdenada">
+
+        </ul>
+
+        <button class="btn btn-success" onclick="agregarNodos()">Agregar</button>
+        <button class="btn btn-danger" onclick="eliminarNodos()">Eliminar</button>
+    </div>
     <script src="./js/19.removeChild.js"></script>
 </body>
 </html>

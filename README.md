@@ -29,3 +29,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 14.getElementsByTagName.html 15.getElementsByTagName_2.html, invocando un conjunto de elementos del DOM por nombre de la etiqueta HTML. el metodo getElementsByTagName retorna un array con los datos.
 
 - 16.appenChild.html 17.appenChild_".html, creando nodos de texto con la propiedad createTextNode y agregandolos a un elemento del DOM con la propiedad appenChild
+
+- 18.removeChild.html 19.removeChild_2.html, creando nodos de texto para agregarlos a nodos elementos, verificando si el nodo padre tiene nodos hijos con el metodos hasChildNodes() para eliminarlos con la propiedad removeChild.
