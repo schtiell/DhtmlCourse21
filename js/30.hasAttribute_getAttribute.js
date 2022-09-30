@@ -1,9 +1,12 @@
 
 let getAttributes = function () {
 
-    //console.log("hasAttributes");
-
     let tabla = document.getElementById("tabla");
+
+    for (let index = 0; index < tabla.hasAttributes().length; index++) {
+        console.log(tabla[index]);
+        
+    }
 
     if(tabla.hasAttribute.length > 0){
         console.log(`El elemento tabla tiene ${tabla.hasAttribute.length} atributos`);
@@ -14,7 +17,7 @@ let getAttributes = function () {
             tabla.removeAttribute("border");
         }else{
             //Si no tiene el borde entonces le asigna uno con un ancho de 5px
-            tabla.setAttribute("border", "5px");
+            tabla.setAttribute("border", "3px");
         }
     }
 
