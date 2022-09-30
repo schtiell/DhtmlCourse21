@@ -5,70 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Importando la libreria de jQuery -->
-    <script src="./js/jquery-3.6.0.min.js"></script>
-
-    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+       <!-- cdn jquery for bootstrap framework-->
+       <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-    <!-- Aplicando stilos css -->
-    <style>
-        html,
-        body{
-            margin: 10px;
-            padding: 10px;
-        }
-
-        h1{
-            margin-bottom: 40px;
-        }
-
-        div{
-            border: 1px solid black;
-            padding: 15px;
-            margin: 10px;
-            width: 50%;
-        }
-
-        button{
-            margin: 20px;
-        }
-
-        p{
-            margin-bottom: 5px;
-        }
-
-        a{
-            display: block;
-        }
-    </style>
-
-    <title>function removeAttribute()</title>
+       <!-- css3 for bootstrap  -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+   
+       <!-- cdn bundle bootstrap include Popper  -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+   
+       <!-- Importando el css3 -->
+       <link rel="stylesheet" href="./css/18.styles.css" type="text/css">
+   
+       <!-- cdn favicon -->
+       <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
+   
+       <title>Removiendo atributos en nodos: removeAttribute()</title>
 </head>
 <body>
-    <h1>function removeAttribute()</h1>
+    
+    <div class="container">
+        <h1>
+            DHTML: HTML Dinámico:
+            <small>Remover atributos: removeAttribute(  )</small>
+        </h1>
 
-    <table id="tabla" border="2px">
-        <thead>
-            <td>Encabezado 1</td>
-            <td>Encabezado 2</td>
-        </thead>
-        <tr>
-            <td>Celda 1-1</td>
-            <td>Celda 1-2</td>
-        </tr>
-        <tr>
-            <td>Celda 1-2</td>
-            <td>Celda 2-2</td>
-        </tr>
-    </table>
+        <hr>
 
-    <button type="submit" class="btn btn-primary" onclick="eliminarBorde()">Quitar el borde!!</button>
+        <p>Eliminar el atributo border de la tabla: </p>
 
-    <button type="submit" class="btn  btn-primary" onclick="obtenerAtributo()">Obtener el atributo
-    </button>
+        <table class="table table-striped table-hover" id="tabla" border="2px">
+            <thead>
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+            </thead>
+            <tr>
+                <td>Celda 1-1</td>
+                <td>Celda 1-2</td>
+            </tr>
+            <tr>
+                <td>Celda 1-2</td>
+                <td>Celda 2-2</td>
+            </tr>
+        </table>
+
+        <button class="btn btn-warning" onclick="eliminarBorde()">Quitar el borde!!</button>
+
+        <button class="btn btn-primary" onclick="obtenerAtributo()">Obtener el atributo</button>
+
+        <button class="btn btn-success" onclick="addAtributo()">Agregar el atributo</button>
+    
+    </div>
 
     <script src="./js/28.removerAtributo.js"></script>
 </body>

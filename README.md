@@ -40,4 +40,6 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 
 - 24.removerElement.html 25.removerElement.html, utilizan el motodo removeChild para eliminar un ELEMENT_NODE del DOM
 
-- 26.agregarAtributos.html 27.agregarAtributos.html, muestra el uso del metodo **setAttribute()** para agregar atributos a los ELEMENT_NODES del DOM
+- 26.agregarAtributos.html 27.agregarAtributos.html, muestra el uso del metodo **setAttribute()** para agregar atributos a los ELEMENT_NODES del DOM.
+
+- 28.removeAtributo.html 29.agregarAtributos.html, utiliza el metodo **removeAttribute()** para remover atributos a los ELEMENT_NODES del DOM.

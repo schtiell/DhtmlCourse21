@@ -1,5 +1,5 @@
 
-
+// Eliminar atributos a ELEMENT_NODES
 let eliminarAtributos = function () {
 
     let enlace = document.getElementById("google");
@@ -14,6 +14,7 @@ let eliminarAtributos = function () {
 
 }
 
+// Agregar atributos a ELEMENT_NODES
 let agregarAtributos = function () {
 
     let enlace = document.getElementById("google");
@@ -28,6 +29,7 @@ let agregarAtributos = function () {
 
 }
 
+// Eliminar el atributo border de la tabla
 let eliminarBorde = function () {
 
     let tabla = document.getElementById("tabla");
@@ -38,6 +40,7 @@ let eliminarBorde = function () {
 
 }
 
+// Obtener el valor del atributo border
 let obtenerAtributo = function () {
 
     let tabla = document.getElementById("tabla");
@@ -46,4 +49,14 @@ let obtenerAtributo = function () {
 
     console.log(atributo);
 
+}
+
+// Agregar atributo a la table
+let addAtributo =  function () {
+    
+    let tabla = document.getElementById("tabla");
+
+    tabla.setAttribute("border","3px");
+
+    console.log(tabla)
 }
