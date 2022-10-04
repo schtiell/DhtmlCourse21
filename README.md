@@ -48,4 +48,6 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 
 - 31.move_clone_node.html, utiliza el metodo **nodeClone(BOOLEAN VALUE)** que permite clonar un ELEMENT_NODE incluyendo sus nodos hijos si se le pasa como argumento un **true**. Y el moviemiento de un nodo de una posición a otra.
 
-- 32.innerHTML.html 33.innerHTML_2.html, **innerHTML** propiedad utilizada para crear elementos HTML TEXT_NODES y ELEMENT_NODES en el DOM, permitiendo reducir considerablemente el proceso de creacion de los mismos.
+- 33.innerHTML.html 34.innerHTML_2.html, **innerHTML** propiedad utilizada para crear elementos HTML TEXT_NODES y ELEMENT_NODES en el DOM, permitiendo reducir considerablemente el proceso de creacion de los mismos.
+
+- 35.innerText.html 36.innerText_2.html, usando la propiedad **innerText** para cambiar el TEXT_NODE de un ELEMENT_NODE del DOM
