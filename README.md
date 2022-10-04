@@ -51,3 +51,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 33.innerHTML.html 34.innerHTML_2.html, **innerHTML** propiedad utilizada para crear elementos HTML TEXT_NODES y ELEMENT_NODES en el DOM, permitiendo reducir considerablemente el proceso de creacion de los mismos.
 
 - 35.innerText.html 36.innerText_2.html, usando la propiedad **innerText** para cambiar el TEXT_NODE de un ELEMENT_NODE del DOM
+
+- 37.manejo_css.html, muestra un ejemplo de como se modifican los valores css de los elementos HTML utilizando js

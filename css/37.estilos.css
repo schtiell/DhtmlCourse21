@@ -1,27 +1,74 @@
-
-html,
-body{
-    margin: 20px
-}
-
-select{
-    margin-bottom: 20px;
-}
-
 .container{
-    border: 1px solid #000;
-    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    background-color: #FAFAFA;
+    color: #212F3D;
+    font-size: 16px;
+    padding: 20px 30px;
 }
 
-#parrafo {
-    font-size: 20px;
-    text-align: center;
+.ejercicio{
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: 80%;
+}
 
+small{
+    display: block;
+    color: #8C9193;
+}
+
+hr{
+    margin: 40px;
+}
+
+h1,
+h2{
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+p{
+    margin: 20px;
+    text-align: justify;
+}
+
+pre{
+    margin: 40px;
+    text-align: justify;
+    font-weight: bold;
+    font-style: italic;
+}
+
+span{
+    font-weight: bold;
+    font-style: italic;
+}
+
+ul{
+    list-style-type: disclosure-closed;
+    list-style-position: inside;
+}
+
+li{
+    text-align: left;
+}
+
+
+button{
+    display: block;
+    margin: 20px 30px;
+}
+
+input,
+label,
+a{
+    display: inline-block;
+    margin: 20px;
+    width: 30%;
 }
 
 label{
-    display: inline-block;
-    width: 30%;
-    text-align: left;
-    margin: 16px;
+    font-weight: bold;
 }

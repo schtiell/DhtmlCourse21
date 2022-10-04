@@ -5,187 +5,253 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Importando la libreria jQuery -->
-    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+       
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+       
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/37.estilos.css" type="text/css">
+       
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
 
-    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-        
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-    <!-- Importando estilos css -->
-    <link rel="stylesheet" href="./css/37.estilos.css">
-
-
-    <title>Accediendo al estilo de una mara HTML</title>
+    <title>Accediendo a los estilos CSS de una etiqueta HTML</title>
 </head>
 <body>
 
-    <div class="container" id="container">
-        <p id="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum quasi eius animi iste. Quas maxime accusantium.</p>
-    </div>
+    <div class="container">
 
-    <div class="container text-center">
+        <h1>
+            DHTML: HTML Dinámico
+            <small>Accediendo a los estilos CSS de una etiqueta HTML</small>
+        </h1>
 
-        <label for="colorfondo"> Color de fondo:
-            <select onChange="cambiarColorFondo()" id="colorfondo" class="form-control">
-                <option value="#e5e8e8" selected>Plata</option>
-                <option value="#ffff00">amarillo</option>
-                <option value="#ff0000">rojo</option>
-                <option value="#00ff00">verde</option>
-                <option value="#0000ff">azul</option>
-            </select>
-        </label>
+        <hr>
 
-        <label for="colorfuente" >Color de fuente:
-            <select onChange="cambiarColorFuente()" id="colorfuente" class="form-control">
-                <option value="#000000">negro</option>
-                <option value="#ff0000">rojo</option>
-                <option value="#00ff00">verde</option>
-                <option value="#0000ff">azul</option>
-            </select>
-        </label>
+        <p>Las propiedades de estilo CSS de una marca HTML se pueden modificar luego que la página se cargó en el navegador.</p>
 
-        <label for="tamanofuente">Cambiar tamaño de fuente:
-            <select onChange="cambiarTamanoFuente()" id="tamanofuente" class="form-control">
-                <option value="10px">10</option>
-                <option value="12px">12</option>
-                <option value="14px">14</option>
-                <option value="16px">16</option>
-                <option value="18px">18</option>
-                <option value="20px">20</option>
-                <option value="22px">22</option>
-                <option value="24px">24</option>
-            </select>
-        </label>
+        <p>Se debe tener en cuenta que para acceder a los estilos, los nombres de las propiedades tienen un ligero cambio, esto es debido a que el caracter '-' no está permitido en JavaScript para la definición de una variable. Luego, a todas las propiedades debemos sacarle el guión.</p>
 
-        <label for="tipofuente">Cambiar tipo de fuente:
-            <select onChange="cambiarTipoFuente()" id="tipofuente" class="form-control">
-                <option value="Arial">Arial</option>
-                <option value="Courier">Curier</option>
-                <option value="Verdana">Verdana</option>
-            </select>
-        </label>
+        <p>Una propiedad de CSS llamada:</p>
 
-        <label for="estilofuente">Cambiar estilo de la fuente:
-            <select onChange="cambiarEstiloFuente()" id="estilofuente" class="form-control">
-                <option value="normal">Normal</option>
-                <option value="Italic">Italic</option>
-                <option value="Oblique">Oblique</option>
-            </select>
-        </label>
+        <pre>
+        font-size:10px;
+        </pre>
 
-        <label for="pesofuente">Peso de la fuente:
-            <select onChange="cambiarPesoFuente()" id="pesofuente" class="form-control">
-                <option value="normal">Normal</option>
-                <option value="bold">Bold</option>
-            </select>
-        </label>
+        <p>Desde JavaScript se debe invocar como:</p>
 
-        <label for="alineacionfuente">Alineación de la fuente:
-            <select onChange="cambiarAlineacionFuente()" id="alineacionfuente" class="form-control">
-                <option value="left">Left</option>
-                <option value="right">Right</option>
-                <option value="center">Center</option>
-            </select>
-        </label>
+        <pre>
+        puntero.style.fontSize='60px';
+        </pre>
 
-        <label for="decoracionfuente">Decoración de la fuente:
-            <select onChange="cambiarDecoracionFuente()" id="decoracionfuente" class="form-control">
-                <option value="none">none</option>
-                <option value="underline">underline</option>
-                <option value="overline">overline</option>
-                <option value="line-through">line-through</option>
-            </select>
-        </label>
+        <p>Siendo puntero una referencia a un nodo.</p>
 
+        <pre>
+        puntero.stype.zIndex=100;
+        puntero.style.display='none';
+        puntero.fontWeight='bold';
+        puntero.fontFamily='verdana';
+        </pre>
 
-        <label for="espacioletras">Espacio entre letras:
-            <select onChange="cambiarEspacioLetras()" id="espacioletras" class="form-control">
-                <option value="3">3</option>
-                <option value="6">6</option>
-                <option value="9">9</option>
-                <option value="12">12</option>
-                <option value="15">15</option>
-            </select>
-        </label>
+        <p>Así para el resto de las propiedades CSS.</p>
 
-        <label for="espaciopalabras">Espacio entre palabras:
-            <select onChange="cambiarEspacioPalabras()" id="espaciopalabras" class="form-control">
-                <option value="3">3</option>
-                <option value="6">6</option>
-                <option value="9">9</option>
-                <option value="12">12</option>
-                <option value="15">15</option>
-            </select>
-        </label>
+        <div class="container ejercicio">
 
-        <label for="transformaciontexto">Transformación de texto:
-            <select onChange="cambiarTransformacionTexto()" id="transformaciontexto" class="form-control">
-                <option value="none">none</option>
-                <option value="capitalize">capitalize</option>
-                <option value="lowercase">lowercase</option>
-                <option value="uppercase">uppercase</option>
-            </select>
-        </label>
+            <h2>
+                Ejemplo:
+            </h2>
 
-        <label for="anchoborde">Ancho de borde:
-            <select onChange="cambiarAnchoBorde()" id="anchoborde" class="form-control">
-                <option value="0px">0</option>
-                <option value="1px" selected="selected">1</option>
-                <option value="2px">2</option>
-                <option value="3px">3</option>
-                <option value="4px">4</option>
-                <option value="5px">5</option>
-            </select>
-        </label>
+            <hr>
 
-        <label for="estiloborde">Estilo de borde:
-            <select onChange="cambiarEstiloBorde()" id="estiloborde" class="form-control">
-                <option value="none">none</option>
-                <option value="hidden">hidden</option>
-                <option value="dotted">dotted</option>
-                <option value="dashed">dashed</option>
-                <option value="solid">solid</option>
-                <option value="double">double</option>
-                <option value="groove">groove</option>
-                <option value="ridge">ridge</option>
-                <option value="inset">inset</option>
-                <option value="outset">outset</option>
-            </select>
-        </label>
+            <div class="container" id="container">
+                <p id="parrafo">Para ver su funcionamiento definiremos un párrafo y luego mediante distintos controles select modificaremos las propiedades de:</p>
 
-        <label for="colorborde">Color de borde:
-            <select onChange="cambiarColorBorde()" id="colorborde" class="form-control">
-                <option value="#000000">negro</option>
-                <option value="#ffff00">amarillo</option>
-                <option value="#ff0000">rojo</option>
-                <option value="#00ff00">verde</option>
-                <option value="#0000ff">azul</option>
-            </select>
-        </label>
-
-        <label for="padding">padding:
-            <select onChange="cambiarPadding()" id="padding" class="form-control">
-                <option value="0">0</option>
-                <option value="4" selected="selected">4</option>
-                <option value="8">8</option>
-                <option value="12">12</option>
-                <option value="16">16</option>
-                <option value="20">20</option>
-            </select>
-        </label>
-
-        <label for="margin">margin:
-            <select onChange="cambiarMargin()" id="margin" class="form-control">
-                <option value="0">0</option>
-                <option value="4" selected="selected">4</option>
-                <option value="8">8</option>
-                <option value="12">12</option>
-                <option value="16">16</option>
-                <option value="20">20</option>
-            </select>
-        </label>
+                <ul>
+                    <li>color de fondo</li>
+                    <li>Color de fuente</li>
+                    <li>Tamaño de fuente</li>
+                    <li>Tipo de fuente</li>
+                    <li>Estilo de fuente</li>
+                    <li>Peso de la fuente</li>
+                    <li>Alineación de la fuente</li>
+                    <li>Decoración de la fuente</li>
+                    <li>Espacio entre letras</li>
+                    <li>Espacio entre palabras</li>
+                    <li>Transformación de texto</li>
+                    <li>Ancho de borde</li>
+                    <li>Estilo de borde</li>
+                    <li>Color de borde</li>
+                    <li>Margin</li>
+                    <li>Padding</li>
+                </ul>
+            </div>
+    
+            <label for="colorfondo"> Color de fondo:
+                <select onChange="cambiarColorFondo()" id="colorfondo" class="form-control">
+                    <option value="#e5e8e8" selected>Plata</option>
+                    <option value="#ffff00">amarillo</option>
+                    <option value="#ff0000">rojo</option>
+                    <option value="#00ff00">verde</option>
+                    <option value="#0000ff">azul</option>
+                </select>
+            </label>
+    
+            <label for="colorfuente" >Color de fuente:
+                <select onChange="cambiarColorFuente()" id="colorfuente" class="form-control">
+                    <option value="#000000">negro</option>
+                    <option value="#ff0000">rojo</option>
+                    <option value="#00ff00">verde</option>
+                    <option value="#0000ff">azul</option>
+                </select>
+            </label>
+    
+            <label for="tamanofuente">Cambiar tamaño de fuente:
+                <select onChange="cambiarTamanoFuente()" id="tamanofuente" class="form-control">
+                    <option value="10px">10</option>
+                    <option value="12px">12</option>
+                    <option value="14px">14</option>
+                    <option value="16px">16</option>
+                    <option value="18px">18</option>
+                    <option value="20px">20</option>
+                    <option value="22px">22</option>
+                    <option value="24px">24</option>
+                </select>
+            </label>
+    
+            <label for="tipofuente">Cambiar tipo de fuente:
+                <select onChange="cambiarTipoFuente()" id="tipofuente" class="form-control">
+                    <option value="Arial">Arial</option>
+                    <option value="Courier">Curier</option>
+                    <option value="Verdana">Verdana</option>
+                </select>
+            </label>
+    
+            <label for="estilofuente">Cambiar estilo de la fuente:
+                <select onChange="cambiarEstiloFuente()" id="estilofuente" class="form-control">
+                    <option value="normal">Normal</option>
+                    <option value="Italic">Italic</option>
+                    <option value="Oblique">Oblique</option>
+                </select>
+            </label>
+    
+            <label for="pesofuente">Peso de la fuente:
+                <select onChange="cambiarPesoFuente()" id="pesofuente" class="form-control">
+                    <option value="normal">Normal</option>
+                    <option value="bold">Bold</option>
+                </select>
+            </label>
+    
+            <label for="alineacionfuente">Alineación de la fuente:
+                <select onChange="cambiarAlineacionFuente()" id="alineacionfuente" class="form-control">
+                    <option value="left">Left</option>
+                    <option value="right">Right</option>
+                    <option value="center">Center</option>
+                </select>
+            </label>
+    
+            <label for="decoracionfuente">Decoración de la fuente:
+                <select onChange="cambiarDecoracionFuente()" id="decoracionfuente" class="form-control">
+                    <option value="none">none</option>
+                    <option value="underline">underline</option>
+                    <option value="overline">overline</option>
+                    <option value="line-through">line-through</option>
+                </select>
+            </label>
+    
+    
+            <label for="espacioletras">Espacio entre letras:
+                <select onChange="cambiarEspacioLetras()" id="espacioletras" class="form-control">
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="9">9</option>
+                    <option value="12">12</option>
+                    <option value="15">15</option>
+                </select>
+            </label>
+    
+            <label for="espaciopalabras">Espacio entre palabras:
+                <select onChange="cambiarEspacioPalabras()" id="espaciopalabras" class="form-control">
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="9">9</option>
+                    <option value="12">12</option>
+                    <option value="15">15</option>
+                </select>
+            </label>
+    
+            <label for="transformaciontexto">Transformación de texto:
+                <select onChange="cambiarTransformacionTexto()" id="transformaciontexto" class="form-control">
+                    <option value="none">none</option>
+                    <option value="capitalize">capitalize</option>
+                    <option value="lowercase">lowercase</option>
+                    <option value="uppercase">uppercase</option>
+                </select>
+            </label>
+    
+            <label for="anchoborde">Ancho de borde:
+                <select onChange="cambiarAnchoBorde()" id="anchoborde" class="form-control">
+                    <option value="0px">0</option>
+                    <option value="1px" selected="selected">1</option>
+                    <option value="2px">2</option>
+                    <option value="3px">3</option>
+                    <option value="4px">4</option>
+                    <option value="5px">5</option>
+                </select>
+            </label>
+    
+            <label for="estiloborde">Estilo de borde:
+                <select onChange="cambiarEstiloBorde()" id="estiloborde" class="form-control">
+                    <option value="none">none</option>
+                    <option value="hidden">hidden</option>
+                    <option value="dotted">dotted</option>
+                    <option value="dashed">dashed</option>
+                    <option value="solid">solid</option>
+                    <option value="double">double</option>
+                    <option value="groove">groove</option>
+                    <option value="ridge">ridge</option>
+                    <option value="inset">inset</option>
+                    <option value="outset">outset</option>
+                </select>
+            </label>
+    
+            <label for="colorborde">Color de borde:
+                <select onChange="cambiarColorBorde()" id="colorborde" class="form-control">
+                    <option value="#000000">negro</option>
+                    <option value="#ffff00">amarillo</option>
+                    <option value="#ff0000">rojo</option>
+                    <option value="#00ff00">verde</option>
+                    <option value="#0000ff">azul</option>
+                </select>
+            </label>
+    
+            <label for="padding">padding:
+                <select onChange="cambiarPadding()" id="padding" class="form-control">
+                    <option value="0">0</option>
+                    <option value="4" selected="selected">4</option>
+                    <option value="8">8</option>
+                    <option value="12">12</option>
+                    <option value="16">16</option>
+                    <option value="20">20</option>
+                </select>
+            </label>
+    
+            <label for="margin">margin:
+                <select onChange="cambiarMargin()" id="margin" class="form-control">
+                    <option value="0">0</option>
+                    <option value="4" selected="selected">4</option>
+                    <option value="8">8</option>
+                    <option value="12">12</option>
+                    <option value="16">16</option>
+                    <option value="20">20</option>
+                </select>
+            </label>
+            
+        </div>
 
     </div>
 
