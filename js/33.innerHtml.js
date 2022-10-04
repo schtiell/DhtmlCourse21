@@ -1,43 +1,38 @@
 
-let crearEnlaces = function () {
-    //console.log("innerHtml");
+// Generando los links con la propiedad innerHTML
+let usandoInnerHTML = function () {
 
     //Utiliznado el innerHTML
     let objeto = document.getElementById("contenedor-enlaces1");
-    objeto.innerHTML = `<a href=${document.getElementById('text1').value}>Enlace 1</a><br>
+    objeto.innerHTML = `<a href=${document.getElementById('text1').value}>Enlace 1</a>
                         <a href=${document.getElementById('text2').value}>Enlace 2</a>`;
+}
 
-
-    //Creando nodos elementos y nodos de texto 
+// Generando los links sin la propiedad innerHTML
+let sinInnerHTML = function () {
 
     //Primer enlace
 
-    //Creando el elemento <a></a>
-    let nodo_elemento = document.createElement("a");
+    let nodo_elemento = document.createElement("a");        // crea el elemento
 
-    //Creando el nodo de texto
-    let nodo_texto = document.createTextNode ("Enlace 1");
+    let nodo_texto = document.createTextNode ("ir a google");    // crea el texto para el elemento
 
-    //Agregando el nodo de texto al elemento <a></a>
-    nodo_elemento.appendChild(nodo_texto);
+    nodo_elemento.appendChild(nodo_texto);                  // agrega el texto al elemento
 
-    /*
-        Creando un atributo href para el enlace <a></a>
-        Y asignado el valor que tiene predefinido el input text en el atributo value=""
-    */
-    nodo_elemento.setAttribute("href", document.getElementById('text1').value);
+    let url = document.getElementById('text1').value;       // se llama al valor del input
 
-    //Invocando el contenedor padre para el elemento <a></a>
-    let contenedor = document.getElementById("contenedor-enlaces2");
+    nodo_elemento.setAttribute("href", url);                // se le agrega el atributo al elemento
 
-    //Agregando el elemento <a></a> al contenedor padre
-    contenedor.appendChild(nodo_elemento);
+    let contenedor = document.getElementById("contenedor-enlaces2");    // contenedor padre
+
+    contenedor.appendChild(nodo_elemento);  // agregando el elemento al contenedor padre
+
 
     //Segundo enlace
 
     let nodo_elemento_2 = document.createElement("a");
     
-    let nodo_texto_2 = document.createTextNode("Enlace 2");
+    let nodo_texto_2 = document.createTextNode("ir a facebook");
     
     nodo_elemento_2.appendChild(nodo_texto_2);
 
@@ -51,10 +46,8 @@ let crearEnlaces = function () {
 
 function crearLista(){
 
-    //Definiendo un arreglo con los dias de la semana
     const arrayDays = ["Lunes","Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
 
-    //Variable tipo string en blanco
     let cadena = "";
     
     //For of ejecuta un bloque de codigo para un objeto iterable
@@ -64,8 +57,7 @@ function crearLista(){
         cadena += `<li>${i}</li>`;
         
     }
-
-    //Imprimiendo el valor de la variable cadena en consola
+    
     console.log(cadena);
     
     //Impimiendo en el DOM el valor de la cadena con todos los elementos <li>
