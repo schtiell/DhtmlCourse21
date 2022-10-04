@@ -43,3 +43,7 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 26.agregarAtributos.html 27.agregarAtributos.html, muestra el uso del metodo **setAttribute()** para agregar atributos a los ELEMENT_NODES del DOM.
 
 - 28.removeAtributo.html 29.agregarAtributos.html, utiliza el metodo **removeAttribute()** para remover atributos a los ELEMENT_NODES del DOM.
+
+- 30. hasAttribute_getAttribute.html, muestra un ejemplo de el uso de los metodos **hasAttribute()** y **getAttribute()** que permiten comprobar si un ELEMENT_NODE tiene atributos y getAttribute que permite buscar si un nodo tiene un atributo especifico.
+
+- 31. move_clone_node.html, utiliza el metodo **nodeClone(BOOLEAN VALUE)** que permite clonar un ELEMENT_NODE incluyendo sus nodos hijos si se le pasa como argumento un **true**. Y el moviemiento de un nodo de una posición a otra. 

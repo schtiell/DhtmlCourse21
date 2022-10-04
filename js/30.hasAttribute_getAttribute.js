@@ -3,11 +3,6 @@ let getAttributes = function () {
 
     let tabla = document.getElementById("tabla");
 
-    for (let index = 0; index < tabla.hasAttributes().length; index++) {
-        console.log(tabla[index]);
-        
-    }
-
     if(tabla.hasAttribute.length > 0){
         console.log(`El elemento tabla tiene ${tabla.hasAttribute.length} atributos`);
         console.log(`El atributo es un borde con valor :${tabla.getAttribute("border")}`);
@@ -20,7 +15,4 @@ let getAttributes = function () {
             tabla.setAttribute("border", "3px");
         }
     }
-
-    //tabla.getAttributeNames()
-
 }

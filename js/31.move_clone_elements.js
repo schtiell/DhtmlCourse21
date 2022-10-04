@@ -1,64 +1,62 @@
-
-
+// Funcion para mover elementos
 let moverElementos = function (){
-
-    //console.log("Moviendo los elementos");
 
     let lista = document.getElementById("lista1");
 
-    let nodoHijo = lista.firstChild;
+    let elemento = lista.firstElementChild;
 
     let lista2 = document.getElementById("lista2");
 
-    lista2.appendChild(nodoHijo);
+    lista2.appendChild(elemento);
 
 }
 
+// Funcion para clonar elementos
 let clonarElementos = function () {
 
-    //Se invoca el elemento a clonar
     let lista = document.getElementById("lista1");
 
-    //Se crea una copia del elemento y se devuelve un clon
     let clonLista = lista.cloneNode(true);
 
-    //Se llama el elemento padre que va a tener el clon de los elementos
-    let lista2 = document.getElementById("containerLista2");
+    let lista2 = document.getElementById("contenedor-lista2");
 
-    //Se agregan el elemento clonado al contenedor padre
     lista2.appendChild(clonLista);
 
 }
 
 //Funciones del archivo 31.move_clone_node.html
 function moveElements() {
-    //console.log("moviendo elementos");  
     
-    let parrafos = document.getElementById("container1");
+    let parrafos = document.getElementById("contenedor-1");
 
-    let parrafoIndividual = parrafos.firstChild;
+    let parrafoIndividual = parrafos.firstElementChild;
 
-    if (parrafos.childNodes.length > 0) {
+    if (parrafos.children.length > 0) {
 
-        let contenerdorDestino = document.getElementById("container2");
+        let contenerdorDestino = document.getElementById("contenedor-2");
 
         contenerdorDestino.appendChild(parrafoIndividual);
     }else{
-        console.log("No hay mas elementos que mover");
+        console.log("No hay ELEMENT_NODES que mover");
     }
 
 }
 
 function cloneElements() {
 
-    //console.log("clonando elementos");   
+    let contenedorOrigen = document.getElementById("contenedor-1");
 
-    let container = document.getElementById("container1");
+    if (contenedorOrigen.children.length > 0) {
 
-    let clnElementos = container.cloneNode(true);
+        let clnElementos = contenedorOrigen.cloneNode(true);
 
-    let containerDestino = document.getElementById("container2");
+        let containerDestino = document.getElementById("contenedor-2");
 
-    containerDestino.appendChild(clnElementos);
+        containerDestino.appendChild(clnElementos);
+
+    } else {
+        
+        console.log("No hay ELEMENT_NODES que clonar");
+    }
 
 }
