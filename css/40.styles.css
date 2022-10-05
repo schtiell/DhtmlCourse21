@@ -36,24 +36,23 @@ p{
     text-align: justify;
 }
 
-pre{
-    margin: 40px;
-    text-align: justify;
-    font-weight: bold;
-    font-style: italic;
-}
-
 span{
     font-weight: bold;
     font-style: italic;
 }
 
-.puntero:hover{
-    cursor: pointer;
-    color: red;
-    font-size: larger;
+button{
+    display: block;
+    margin: 10px 30px;
 }
 
-.table{
-    margin: 50px 20px;
+.parrafo{
+    display: block;
+    visibility: hidden;
+    border: 2px solid #28A0DB;
+    background-color: #ACE1FC;
+    font-weight: bold;
+    margin: 30px auto;
+    padding: 10px;
+    text-align: center;
 }

@@ -57,3 +57,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 38.controles_input_dinamicos.html 39.controles_input_dinamicos_2.html, se muestra como se generan controles input utilizando el metodo innerHTML para generar etiquetas HTML y con el metodo anterior en el cual se generan los ELEMENT_NODES, TEXT_NODES, sus propiedades se indica donde se va a insertar, haciendo mas tedioso y largo el proceso para crear un solo ELEMENT_NODE. Por lo cual el metodo innerHTML es mucho mejor.
 
 - 40.evento_onclick.html explicacion del evento onclick
+
+- 41.objeto_this.html 42.objeto_this_2.html, mostrando como el objeto this es enviado como argumento a la funcion js, con la finalidad de saber cual es el objeto que dispara cualquier evento.
