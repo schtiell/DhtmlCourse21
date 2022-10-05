@@ -5,54 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Importando la libreria jQuery -->
-    <script src="./js/jquery-3.6.0.min.js"></script>
-
-    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-            
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-    <style>
-
-        .container{
-            margin-top: 30px;
-            padding: 10px;
-            border: 1px solid #000;
-        }
-
-        #parrafo{
-            font-size: 14px;
-            background-color: #FFECB3;
-            cursor: pointer;
-        }
-
-        #ayuda{
-            color: #37474F;
-            background: #B3E5FC;
-            position: absolute;
-            text-align: center;
-            left: 40px;
-            top: 30px;
-            width: 100px;
-            height: 40px;
-            display: none;
-        }
-
-    </style>
-
-    <title>Informacion generada por eventos</title>
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+               
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+               
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/44.styles.css" type="text/css">
+               
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
+        
+    <title>Información generada por los eventos</title>
 </head>
 <body>
     
-    <div class="container text-center">
+    <div class="container">
 
-        <h1>Informacion generada por eventos</h1>
+        <h1>
+            DHTML: HTML Dinámico
+            <small>Información generada por eventos</small>    
+        </h1>
 
-        <p id="parrafo" onclick="presionandoParrafo(event)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, totam reprehenderit quae illo nulla excepturi optio expedita a reiciendis voluptatum neque sapiente. Aliquid a nostrum cupiditate eveniet placeat delectus sed.</p>
+        <hr>
 
-        <div id="ayuda">
-            ayuda
+        <p>El ejercicio manda adicionalmente un mensaje en consola web donde se muestran las coordenadas en "x" y "y"</p>
+
+        <div class="container ejercicio">
+
+            <h2>Ejercicio:</h2>
+
+            <hr>
+
+            <p class="parrafo" onclick="presionandoParrafo(event)">
+                <span>Ejercicio: </span>Cuando se presione el botón del mouse sobre un párrafo, mostrar un div a 10 píxeles más abajo y 10 píxeles a la derecha con un mensaje de ayuda.
+            </p>
+
+            <div id="ayuda">
+                ayuda...
+            </div>
         </div>
     </div>
     <script src="./js/43.infoEventos.js"></script>

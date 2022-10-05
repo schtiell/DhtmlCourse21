@@ -59,3 +59,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 40.evento_onclick.html explicacion del evento onclick
 
 - 41.objeto_this.html 42.objeto_this_2.html, mostrando como el objeto this es enviado como argumento a la funcion js, con la finalidad de saber cual es el objeto que dispara cualquier evento.
+
+- 43.informacion_eventos.html 44.informacion_eventos_2.html muestran como a traves del objeto event es posible obtener informacion, en estos ejemplos se utilizan la propiedad clientX y clientY para conocer las coordenadas donde se hace clic. El evento se dispara al hacer clic sobre el parrafo
