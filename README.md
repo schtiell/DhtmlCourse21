@@ -53,3 +53,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 35.innerText.html 36.innerText_2.html, usando la propiedad **innerText** para cambiar el TEXT_NODE de un ELEMENT_NODE del DOM
 
 - 37.manejo_css.html, muestra un ejemplo de como se modifican los valores css de los elementos HTML utilizando js
+
+- 38.controles_input_dinamicos.html 39.controles_input_dinamicos_2.html, se muestra como se generan controles input utilizando el metodo innerHTML para generar etiquetas HTML y con el metodo anterior en el cual se generan los ELEMENT_NODES, TEXT_NODES, sus propiedades se indica donde se va a insertar, haciendo mas tedioso y largo el proceso para crear un solo ELEMENT_NODE. Por lo cual el metodo innerHTML es mucho mejor.

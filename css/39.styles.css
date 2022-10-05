@@ -1,0 +1,49 @@
+.container{
+    display: block;
+    text-align: center;
+    background-color: #FAFAFA;
+    color: #212F3D;
+    font-size: 16px;
+    padding: 20px 30px;
+}
+
+.ejercicio{
+    display: inline-block;
+    margin: 20px 20px;
+    padding: 10px 20px;
+    width: 80%;
+    border: 1px solid #8C9193;
+    text-align: center;
+}
+
+small{
+    display: block;
+    color: #8C9193;
+}
+
+hr{
+    margin: 40px;
+}
+
+h1,
+h2{
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+p{
+    margin: 20px;
+    text-align: justify;
+}
+
+label{
+    font-weight: bold;
+    width: 100%;
+}
+
+.control{
+    display: inline-block;
+    margin: 30px;
+    width: 40%;
+}

@@ -1,24 +1,28 @@
 let contador = 0;
 
 let generarControles = function () {
-    //console.log("control generado");
 
     contador ++;
 
-    let inpuText = document.createElement("input");
+    let inpuText = document.createElement("input");             // Se crea el ELEMENT_NODE
 
-    inpuText.type = "text";
+    let etiqueta = document.createElement("label");
 
-    inpuText.name = "nombre" + contador;
+    etiqueta.innerText = "Nombre:";
 
-    inpuText.id = "input" + contador;
+    inpuText.type = "text";                                     // Propiedad type
 
-    inpuText.placeholder = inpuText.name;
+    inpuText.name = `Nombre: ${contador}`;                      // Propiedad name
 
-    document.getElementById("fieldset-id").appendChild(inpuText);
+    inpuText.id = `inputcontador${contador}`;                   // Propiedad id
 
-    document.getElementById("fieldset-id").appendChild(document.createElement("br"));
+    inpuText.placeholder = inpuText.name;                       // Propiedad placeholder
 
+    etiqueta.setAttribute("class", "control")                   // Propiedad class
+    inpuText.setAttribute("class","form-control control");      
+
+    document.getElementById("otroControl").appendChild(etiqueta);
+    document.getElementById("otroControl").appendChild(inpuText);       // Agregando el input a un contenedor
 }    
 
 
@@ -34,10 +38,8 @@ let numeroHijos = function (){
     for (let i = 1; i <= numero; i++) {
 
         //Creando el elemento html input con su respectiva etiqueta label
-        cadena += ` <label for="text-${i}"> Texto: ${i}
-                    <input type="text" id="text-${i}" name="text-${i}" placeholder="text-${i}">
-                    </label>
-                    <br>`;
+        cadena += ` <label for="text-${i}"> Texto: ${i} </label>
+                    <input type="text" class="form-control control" id="text-${i}" name="text-${i}" placeholder="texto">`;
 
     }
 
