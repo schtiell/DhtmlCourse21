@@ -5,46 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Importando la libreria jQuery -->
-    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+                   
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+                   
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/48.styles.css" type="text/css">
+                   
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
 
-    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-            
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-    <style>
-        .container{
-            margin: 20px auto;
-            background-color: #EBF5FB;
-            color: #212F3D;
-            text-align: justify;
-            padding: 10px;
-        }
-
-        h1{
-            margin: 30px auto;
-            cursor: pointer;
-            text-align: center;
-        }
-    </style>
-
-    <title>onload & unonload events</title>
+    <title>Eventos de mouse: onmousemove()</title>
 </head>
-<body onload="imprimirMensaje()" onunload="imprimirDespedida()"    >
+<body onload="printWelcome()" onunload="openGoogle()">
 
     <div class="container">
 
-        <h1>onload & unload: <small>event</small></h1>
+        <h1>
+            DHTML: HTML Dinámico
+            <small>Evento: onload( ) y unload( ) </small>
+        </h1>
 
-        <p>El evento onload se dispara cuando terminamos de cargar toda la página. Es decir luego que se a creado el árbol con todos los elementos de la página. Cuando se dispara este evento estamos seguro que todos los elementos de la página están creados.</p>
+        <hr>
 
-        <p>El evento onunload se dispara cuando salimos del sitio y nos dirigimos por medio de un hipervínculo a otro o cerramos la ventana del navegador.</p>
+        <div class="container">
 
-        <a href="http://google.com">Ir a google</a>
+            <p>El evento onload se dispara cuando se ha cargado un objeto, este evento es utilizado con mayor frecuencia dentro del elemento body, para ejecutar un script una vez que una página web ha cargado completamente todo el contenido </p>
+        
+            <p>Es decir luego que se a creado el árbol con todos los elementos de la página es cuando ocurre este evento.</p>
 
+            <p>El evento onunload se ejecuta cuando salimos del sitio y nos dirigimos por medio de un hipervínculo a otro o cerramos la ventana del navegador.</p>
+        </div>
     </div>
-    
     <script src="./js/50.onload_onunload.js"></script>
 </body>
 </html>
