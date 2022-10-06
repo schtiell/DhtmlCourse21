@@ -1,15 +1,7 @@
 
-let ubicarCoordenada = function (e){
+let getCoords= function (e, objeto){
 
-    console.log(`Moviendo X: ${e.clientX}, Y:${e.clientY}`);
-
-    let coordenadas = document.getElementById("coordenadasContainer");
-
-    coordenadas.innerText = `Moviendo X: ${e.clientX}, Y:${e.clientY}`;
-}
-
-let coordenadasTitulo = function (e){
-        
-        coordenadas = document.getElementById("coordenadasTitulo");
-        coordenadas.innerText = `Moviendo X: ${e.clientX}, Y:${e.clientY}`;
+    let coordenadas = document.getElementById("coordenadas");
+    coordenadas.innerText = `Moviendo:\n  en el eje X: ${e.clientX}\nen el eje Y: ${e.clientY}`;
+    console.log(`El puntero en el objeto: ${objeto.id}, ha comenzado a moverse`)
 }

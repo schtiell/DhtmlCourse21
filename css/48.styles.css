@@ -45,3 +45,23 @@ button{
     display: block;
     margin: 20px auto;
 }
+
+.contenedor{
+    display: block;
+    height: 400px;
+    width: 400px;
+    border: 2px solid #58D68D ;
+    background-color: #FEF5E7;
+    margin: 20px auto;
+}
+
+#imagen{
+    display: block;
+    margin: 20px auto;
+    width: 600px;
+    height: 450px;
+    background: url(https://www.tutorialesprogramacionya.com/dhtmlya/imagenes/dibujo03.jpg);
+    background-repeat: no-repeat;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
