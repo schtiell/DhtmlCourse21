@@ -4,42 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Importando la libreria jQuery -->
-    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+               
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+               
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/45.styles.css" type="text/css">
+               
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
+        
+    <title>Eventos con el mouse: dblclick</title>
 
-    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-            
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-
-    <style>
-
-        .container{
-
-            color: #A04000;
-            background: #ABEBC6;
-            position: absolute;
-            left: 45px;
-            top: 80px;
-            width: 800px;
-            height: 150px;
-            text-align: center;
-            cursor: pointer;
-        }
-    </style>
-
-
-    <title>Eventos ondblclick</title>
 </head>
 <body>
     
-    <div class="container" ondblclick="redimensionarElemento(this)" onclick="retornarTamanoElemento(this)">
+    <div class="container">
         
-        <h1>Titulo del contenedor</h1>
+        <h1>
+            DHTML: HTML Dinámico:
+            <small>Eventos con el mouse: dblclick</small>
+        </h1>
 
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quibusdam ex eos quaerat, ipsum quod recusandae itaque! Quibusdam, dolorum ipsa. Impedit incidunt, omnis aut sint sapiente error voluptatem non dolor?</p>
+        <hr>
+
+        <div class="container">
+
+            <h2>Ejercicio:</h2>
+
+            <hr>
+
+            <p>Hacer doble clic sobre los siguientes parrafos para redimensionar el tamaño del contenedor, y hacer un clic posteriormete para regresar su tamaño</p>
+
+            <div class="container" id="contenedor" ondblclick="redimensionarElemento(this)" onclick="retornarTamanoElemento(this)">
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quibusdam ex eos quaerat, ipsum quod recusandae itaque! Quibusdam, dolorum ipsa. Impedit incidunt, omnis aut sint sapiente error voluptatem non dolor?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quas. Et iure eum dolore nostrum corporis, praesentium molestias harum sint excepturi labore quod provident ad minima, soluta laboriosam deleniti temporibus!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique qui quis possimus explicabo eveniet quibusdam placeat, eligendi quae nostrum, nesciunt expedita, dolor sapiente inventore exercitationem earum impedit non vel in!</p>
+            </div>
+        </div>
     </div>
 
     <script src="./js/46.dblclick_event.js"></script>

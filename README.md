@@ -63,3 +63,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 43.informacion_eventos.html 44.informacion_eventos_2.html muestran como a traves del objeto **event** es posible obtener informacion, en estos ejemplos se utilizan la propiedad **clientX y clientY** para conocer las coordenadas donde se hace clic. El evento se dispara al hacer clic sobre el parrafo
 
 - 45.onmousedown_onmouseup.html 45.onmousedown_onmouseup_2.html, muestran el funcionamiento del los eventos **onmousedown()**, **onmouseup()**, adicional el primer ejemplo muestra otros eventos relacionados al uso del mouse que son **mouseenter()** y **mouseleave()**
+
+- 46.dblclick_event.html 47.dblclick_event_2.html, se utiliza el evento de hacer doble click llamado **ondblclick()** para ejecutar un comportamiento sobre un ELEMENT_NODE del DOM
