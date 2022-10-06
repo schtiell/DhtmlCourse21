@@ -65,3 +65,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 45.onmousedown_onmouseup.html 45.onmousedown_onmouseup_2.html, muestran el funcionamiento del los eventos **onmousedown()**, **onmouseup()**, adicional el primer ejemplo muestra otros eventos relacionados al uso del mouse que son **mouseenter()** y **mouseleave()**
 
 - 46.dblclick_event.html 47.dblclick_event_2.html, se utiliza el evento de hacer doble click llamado **ondblclick()** para ejecutar un comportamiento sobre un ELEMENT_NODE del DOM
+
+48.onmouseover_onmouseout.html, se muestra el uso de los eventos **onmouseover()** y **onmouseout()** los cuales son ejecutados en forma conjunta al posicionarse y salir de algun ELEMENT_NODE.
