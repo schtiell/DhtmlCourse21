@@ -52,12 +52,14 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 
 - 35.innerText.html 36.innerText_2.html, usando la propiedad **innerText** para cambiar el TEXT_NODE de un ELEMENT_NODE del DOM
 
-- 37.manejo_css.html, muestra un ejemplo de como se modifican los valores css de los elementos HTML utilizando js
+- 37.manejo_css.html, muestra un ejemplo de como se modifican los valores css de los elementos HTML utilizando js, mediante la propiedad **style**
 
 - 38.controles_input_dinamicos.html 39.controles_input_dinamicos_2.html, se muestra como se generan controles input utilizando el metodo innerHTML para generar etiquetas HTML y con el metodo anterior en el cual se generan los ELEMENT_NODES, TEXT_NODES, sus propiedades se indica donde se va a insertar, haciendo mas tedioso y largo el proceso para crear un solo ELEMENT_NODE. Por lo cual el metodo innerHTML es mucho mejor.
 
-- 40.evento_onclick.html explicacion del evento onclick
+- 40.evento_onclick.html explicacion del evento **onclick()**
 
-- 41.objeto_this.html 42.objeto_this_2.html, mostrando como el objeto this es enviado como argumento a la funcion js, con la finalidad de saber cual es el objeto que dispara cualquier evento.
+- 41.objeto_this.html 42.objeto_this_2.html, mostrando como el objeto **this** es enviado como argumento a la funcion js, con la finalidad de saber cual es el objeto que dispara cualquier evento.
 
-- 43.informacion_eventos.html 44.informacion_eventos_2.html muestran como a traves del objeto event es posible obtener informacion, en estos ejemplos se utilizan la propiedad clientX y clientY para conocer las coordenadas donde se hace clic. El evento se dispara al hacer clic sobre el parrafo
+- 43.informacion_eventos.html 44.informacion_eventos_2.html muestran como a traves del objeto **event** es posible obtener informacion, en estos ejemplos se utilizan la propiedad **clientX y clientY** para conocer las coordenadas donde se hace clic. El evento se dispara al hacer clic sobre el parrafo
+
+- 45.onmousedown_onmouseup.html 45.onmousedown_onmouseup_2.html, muestran el funcionamiento del los eventos **onmousedown()**, **onmouseup()**, adicional el primer ejemplo muestra otros eventos relacionados al uso del mouse que son **mouseenter()** y **mouseleave()**
