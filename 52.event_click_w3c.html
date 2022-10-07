@@ -5,44 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Importando la libreria jQuery -->
-        <script src="./js/jquery-3.6.0.min.js"></script>
-
-        <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-                
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     
-        <style>
-            .container{
-                margin: 20px auto;
-                background-color: #EBF5FB;
-                color: #212F3D;
-                text-align: center;
-                padding: 10px;
-            }
-    
-            h1{
-                margin: 30px auto;
-                cursor: pointer;
-                text-align: center;
-            }
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+                   
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+                   
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/18.styles.css" type="text/css">
+                   
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
 
-            span{
-                font-style: oblique;
-                font-weight: bold;
-            }
-        </style>
-
-    <title>evento click siguiendo las disposición W3C</title>
+    <title>Eventos del mouse: click segun la w3c</title>    
 </head>
 <body>
     <div class="container">
-        <h1>Evento click siguiendo las disposición W3C</h1>
+        <h1>
+            DHTML: HTML Dinámico:
+            <small>Evento click siguiendo las disposición W3C</small>
+        </h1>
 
-        <p><span>Ejercicio: </span>Disponer un enlace, luego cuando se lo presione mostrar un alert agradeciendo la visita al sitio.</p>
+        <hr>
 
-        <a href="http://google.com" id="enlace">Ir a google</a>
+        <p>En este nuevo modelo tenemos un método fundamental llamado:</p>
+
+        <pre>
+        addEventListener()
+        </pre>
+
+        <p>El método <span>addEventListener()</span> es la forma recomendada de registrar un detector de eventos. Los beneficios son los siguientes:</p>
+
+        <ul>
+            <li>Permite agregar más de un controlador para un evento. Esto es particularmente útil para bibliotecas, módulos de JavaScript o cualquier otro tipo de código que necesite funcionar bien con otras bibliotecas o extensiones.</li>
+
+            <li>En contraste con el uso de una propiedad onXYZ, le brinda un control más detallado de la fase cuando se activa el oyente (captura frente a burbujeo).</li>
+
+            <li>Funciona en cualquier objetivo de evento, no solo en elementos HTML o SVG.</li>
+        </ul>
+
+        <p>Su sintaxis es:</p>
+
+        <pre>
+        addEventListener(type, listener)
+        addEventListener(type, listener, options)
+        addEventListener(type, listener, useCapture)
+        </pre>
+
+        <ol>
+            <li><span>type: </span>es una cadena que distingue entre mayúsculas y minúsculas que representa el tipo de evento para escuchar.</li>
+
+            <li><span>listener: </span>es el objeto que recibe una notificación (un objeto que implementa la Eventinterfaz) cuando ocurre un evento del tipo especificado. Debe ser null un objeto con un metodo handleEvent() o una función de JavaScript.</li>
+
+            <li><span>options: </span>Un objeto que especifica características sobre el detector de eventos. Las opciones disponibles son:
+                <ul>
+                    <li>capture</li>
+                    <li>once</li>
+                    <li>passive</li>
+                    <li>signal</li>
+                </ul>
+            </li>
+
+            <li><span>useCapture: </span>Un valor booleano que indica si los eventos de este tipo se enviarán a los listener registrados antes de enviarse a cualquiera de los EventTarget debajo de él en el árbol DOM.</li>
+        </ol>
+
+        <p></p>
+
+        <div class="container">
+            
+            <h2>
+                Ejercicio:
+            </h2>
+
+            <hr>
+
+            <p><span>Ejercicio: </span>Disponer un enlace, luego cuando se lo presione mostrar un alert agradeciendo la visita al sitio.</p>
+
+            <a href="http://google.com" id="enlace">Ir a google</a>
+        </div>
     </div>
 
     <script src="./js/52.event_click_w3c.js"></script>

@@ -73,3 +73,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 50.onload_onunload.html se usan los eventos **onload() y onunload()** para ejecutar funciones de js una vez que el sitio a cargado todo el arbol de elementos del DOM y una vez que se cierra el navegador o se cambia de pagina el metodo unload ejecuta funciones indicadas
 
 50. De acuerdo a las especificaciones de la W3C, los eventos del navegador deben ser ejecutados por javascript y no por html como se hacia antiguamente, los eventos siguen siendo llamados igual solo se les quita el prefijo on. Lo que permite separar la estructura del sitio (html), el diseño (css) y la funcionalidad (js)
+
+51. Manejo del evento click mediante el metodo **addEventListener()**, deacuaerdo con las especificaciones de la W3C
