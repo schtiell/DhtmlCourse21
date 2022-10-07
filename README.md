@@ -66,12 +66,14 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 
 - 46.dblclick_event.html 47.dblclick_event_2.html, se utiliza el evento de hacer doble click llamado **ondblclick()** para ejecutar un comportamiento sobre un ELEMENT_NODE del DOM
 
-48.onmouseover_onmouseout.html, se muestra el uso de los eventos **onmouseover()** y **onmouseout()** los cuales son ejecutados en forma conjunta al posicionarse y salir de algun ELEMENT_NODE.
+- 48.onmouseover_onmouseout.html, se muestra el uso de los eventos **onmouseover()** y **onmouseout()** los cuales son ejecutados en forma conjunta al posicionarse y salir de algun ELEMENT_NODE.
 
-49.onmousemove.html, se utiliza el metodo **onmousemove()** para disparar un evento que ejecuta una funcion en javascript.
+- 49.onmousemove.html, se utiliza el metodo **onmousemove()** para disparar un evento que ejecuta una funcion en javascript.
 
-50.onload_onunload.html se usan los eventos **onload() y onunload()** para ejecutar funciones de js una vez que el sitio a cargado todo el arbol de elementos del DOM y una vez que se cierra el navegador o se cambia de pagina el metodo unload ejecuta funciones indicadas
+- 50.onload_onunload.html se usan los eventos **onload() y onunload()** para ejecutar funciones de js una vez que el sitio a cargado todo el arbol de elementos del DOM y una vez que se cierra el navegador o se cambia de pagina el metodo unload ejecuta funciones indicadas
 
-50. De acuerdo a las especificaciones de la W3C, los eventos del navegador deben ser ejecutados por javascript y no por html como se hacia antiguamente, los eventos siguen siendo llamados igual solo se les quita el prefijo on. Lo que permite separar la estructura del sitio (html), el diseño (css) y la funcionalidad (js)
+- 51.eventos_DOM_especificacion_W3S.html De acuerdo a las especificaciones de la W3C, los eventos del navegador deben ser ejecutados por javascript y no por html como se hacia antiguamente, los eventos siguen siendo llamados igual solo se les quita el prefijo on. Lo que permite separar la estructura del sitio (html), el diseño (css) y la funcionalidad (js)
 
-51. Manejo del evento click mediante el metodo **addEventListener()**, deacuaerdo con las especificaciones de la W3C
+- 52.event_click_w3s.html Manejo del evento **click()** mediante el metodo **addEventListener()**, deacuaerdo con las especificaciones de la W3C.
+
+- 53.event_load.html utiliza el capturador de eventos addEventListener para disparar el evento **load()** y mandar un aler con la bienvenida. Adicional tambien imprime en el DOM 2 botones de los cuales se obtienen sus propiedades al ejecutar el evento click()
