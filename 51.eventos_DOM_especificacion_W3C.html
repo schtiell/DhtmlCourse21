@@ -5,40 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Importando la libreria jQuery -->
-    <script src="./js/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-            
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+                   
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+                   
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/48.styles.css" type="text/css">
+                   
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
 
-    <style>
-        .container{
-            margin: 20px auto;
-            background-color: #EBF5FB;
-            color: #212F3D;
-            text-align: center;
-            padding: 10px;
-        }
-
-        h1{
-            margin: 30px auto;
-            cursor: pointer;
-            text-align: center;
-        }
-    </style>
-
-
-    <title>Modelo de eventos del DOM según la especificación de W3C.
-    </title>
+    <title>Modelo de eventos del DOM según la especificación de W3C.</title>
 </head>
 <body>
     <div class="container">
-        <h1>Modelo de eventos del DOM según la especificación de W3C.</h1>
+        <h1>
+            DHTML: HTML Dinámico
+            <small>Modelo de eventos del DOM según la especificación de W3C.</small>
+        </h1>
 
-        <button class="btn btn-primary" value= "btn-1" id="id-btn1">Boton 1</button>
-        <button class="btn btn-primary" value= "btn-2" id="id-btn2">Boton 2</button>
+        <hr>
+
+        <p>La administración de eventos propuesto por la W3C es significativamente diferente al modelo utilizado hasta ahora para atrapar los eventos. Como ventaja se puede decir que todos los navegadores actuales implementan este modelo por lo que no es necesario un código JavaScript que tenga que estar preguntando en que navegador y en que versión de ese navegador se está ejecutando.</p>
+
+        <p>Este modelo tiene muchas mejoras con respecto al modelo tradicional de enlazar los eventos directamente en el archivo HTML en cada una de las marcas respectivas.</p>
+
+        <p>Utilizando este modelo se puede separar definitivamente el archivo HTML (contenido de la página), archivo CSS (presentación de la página) y el archivo JS (comportamientos de la página)</p>
+
+
+        <div class="container ejercicio">
+
+            <h2>
+                Ejercicio:
+            </h2>
+
+            <hr>
+
+            <p><span>Ejemplo: </span>Obtener el valor declarado en los siguiente botones al hacer clic en ellos, mandar los valores a consola. (Utilizar la especificación de eventos de W3C)</p>
+
+            <button class="btn btn-primary" value="Boton: 1" id="id-btn1">Boton 1</button>
+            <button class="btn btn-secondary" value="Boton: 2" id="id-btn2">Boton 2</button>
+            
+        </div>
     </div>
 
     <script src="./js/51.eventos_DOM_W3C.js"></script>
