@@ -1,23 +1,26 @@
+// Funciones
 
-console.log("focus!!!!");
+let foco = document.getElementById("buscar");
+let cbox = document.getElementById("cbox")
 
-let  foco = document.getElementById("buscar-id");
-let  cbox = document.getElementById("cbox-id")
 
 foco.addEventListener("focus", e => {
-    console.log(e.target.value);
+    console.log(`${e.target.name} en el foco`);
 });
 
 foco.addEventListener("blur", e => {
-    console.log(`${e.target.id} fuera de foco`);
+    console.log(`${e.target.name} fuera de foco`);
 })
 
 
 cbox.addEventListener("focus", e => {
-    console.log(e.target.id);
+    console.log(`${e.target.name} en el foco`);
 });
 
 cbox.addEventListener("blur", e => {
-    console.log(`${e.target.id} fuera de foco`);
-})
+    console.log(`${e.target.name} fuera de foco`);
+});
+
+
+
 

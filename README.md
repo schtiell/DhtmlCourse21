@@ -85,3 +85,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 56.event_mouseover_mouseout.html usa los eventos **mouseover y mouseout** para ejecutar funciones especiales cuando el puntero del mouse entra o sale respectivamente del elemento que dispara el evento
 
 - 57.mousemove.html, muestra el ejemplo de ejecucion del evento **mousemove** que imprime en el DOM las coordenadas cuando el puntero del mouse se mueve sobre una imagen
+
+- 58.event_focus.html utiliza el evento **focus** para mandar un mensaje en consola que se ha enfocado un elemento.
