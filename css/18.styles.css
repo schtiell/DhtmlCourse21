@@ -17,6 +17,7 @@
 ul{
     list-style-type: disclosure-closed;
     list-style-position: inside;
+    margin: 30px;
 }
 
 li{
@@ -59,4 +60,8 @@ span{
 button{
     display: block;
     margin: 10px 30px;
+}
+
+.table{
+    margin: 30px auto;
 }
