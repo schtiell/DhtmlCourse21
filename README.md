@@ -79,3 +79,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 53.event_load.html utiliza el capturador de eventos addEventListener para disparar el evento **load()** y mandar un aler con la bienvenida. Adicional tambien imprime en el DOM 2 botones de los cuales se obtienen sus propiedades al ejecutar el evento click()
 
 - 54.event_mousedown_mouseup.html, Los eventos **mousedown() y mouseup()** eventos accionados al presinar un boton del mouse y al soltarlo. En el ejemplo se aplica sobre el titulo de una tabla y en la primera fila, ademas soble los elementos de una lista que son obtenidos mediante el metodo getElementsByTagName y almacenados en un array
+
+- 55.event_dblclick.html, utiliza el evento **dblclick()** para mostrar y ocultar una imagen cargada por css al DOM del sitio

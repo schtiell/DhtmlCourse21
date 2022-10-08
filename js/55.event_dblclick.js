@@ -1,22 +1,17 @@
 
-//Funciones 
+let ocultarElemento = function (e) {
 
-let ocultarElemento = function () {
+    let imagen = e.target;
+    imagen.style.display = "none";
+    console.log(`Elemento con id: ${imagen.id}, fue oculto`);
 
-    //console.log(e);
-
-    let elemento = document.getElementById("container");
-
-    if (elemento.style.display === "none"){
-
-        elemento.style.display = "block";
-
-    }else {
-        elemento.style.display = "none";
-    }
+    setTimeout( () => {
+        imagen.style.display = "block";
+        console.log(`Elemento con id: ${imagen.id}, fue mostrado nuevamente`);
+    }, 3000);
 }
 
-//
-let elemento = document.getElementById("btn-id");
-elemento.addEventListener("dblclick", ocultarElemento);
+
+let imagen = document.getElementById("imagen");
+imagen.addEventListener("dblclick", ocultarElemento);
 
