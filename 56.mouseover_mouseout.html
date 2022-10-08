@@ -10,13 +10,13 @@
     
     <!-- css3 for bootstrap  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-                   
+
     <!-- cdn bundle bootstrap include Popper  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-                   
+
     <!-- Importando el css3 -->
-    <link rel="stylesheet" href="./css/55.styles.css" type="text/css">
-                   
+    <link rel="stylesheet" href="./css/56.styles.css" type="text/css">
+
     <!-- cdn favicon -->
     <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
         
@@ -34,34 +34,45 @@
 
         <p>El evento mouseover se dispara cuando se posiciona la flecha del mouse a un elemento HTML y el mouseout cuando se saca la flecha del elemento</p>
 
-        <button class="btn btn-primary">Boton 1</button> 
-        <button class="btn btn-primary">Boton 2</button>
-        <button class="btn btn-primary">Boton 3</button>
+        <div class="container ejercicio">
 
-        <table class="table table-dark">
-            <thead id="cabecera">
-                <th id="cabecera-property">Property</th>
-                <th id="cabecera-type">Type</th>
-                <th id="cabecera-descrp">Descrition</th>
-            </thead>
-            <tbody>
-                <tr id="fila">
-                    <td id="fila-prop">target</td>
-                    <td id="fila-type">EventTarget</td>
-                    <td id="fila-descrp">The event target (the topmost target in the DOM tree)</td>
-                </tr>
-                <tr>
-                    <td>type</td>
-                    <td>DOMString</td>
-                    <td>The type of event</td>
-                </tr>
-                <tr>
-                    <td>bubbles</td>
-                    <td>Boolean</td>
-                    <td>Whether the event normally bubbles or not</td>
-                </tr>
-            </tbody>
-        </table>
+            <h2>Ejemplo: </h2>
+
+            <hr>
+
+            <p><span>Ejercicio: </span>Crear una tabla con tres filas y tres columnas cambiar el color del interior de la casilla cuando ingresamos con el mouse. Utilizando el metodo <span>getElementsByTagName()</span></p>
+
+            <table class="table table-dark">
+                <thead id="cabecera">
+                    <th id="cabecera-property">Property</th>
+                    <th id="cabecera-type">Type</th>
+                    <th id="cabecera-descrp">Descrition</th>
+                </thead>
+                <tbody>
+                    <tr id="fila">
+                        <td id="fila-prop">target</td>
+                        <td id="fila-type">EventTarget</td>
+                        <td id="fila-descrp">The event target (the topmost target in the DOM tree)</td>
+                    </tr>
+                    <tr>
+                        <td>type</td>
+                        <td>DOMString</td>
+                        <td>The type of event</td>
+                    </tr>
+                    <tr>
+                        <td>bubbles</td>
+                        <td>Boolean</td>
+                        <td>Whether the event normally bubbles or not</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><span>Ejercicio: </span>Para probar estos dos eventos utilizando la especificación del DOM W3C se implementará una página que contenga tres botones y cuando ingrese la flecha del mouse al botón cambiaremos el color de texto del mismo, retornando al color original cuando retiramos la flecha del control. Utilizando el metodo <span>getElementsByTagName()</span></p>
+
+            <button class="btn btn-primary">Boton 1</button> 
+            <button class="btn btn-primary">Boton 2</button>
+            <button class="btn btn-primary">Boton 3</button>
+        </div>
     </div>
 
     <script src="./js/56.mouseover_mouseout.js"></script>
