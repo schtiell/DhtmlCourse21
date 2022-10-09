@@ -14,6 +14,16 @@
     width: 80%;
 }
 
+ul{
+    list-style-type: disclosure-closed;
+    list-style-position: inside;
+    margin: 30px;
+}
+
+li{
+    text-align: left;
+}
+
 small{
     display: block;
     color: #8C9193;

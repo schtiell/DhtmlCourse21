@@ -37,6 +37,25 @@
 
         <p>Uno de los usos más importantes de este evento es poder validar en el cliente (navegador) los datos ingresados previo a ser enviados al servidor.</p>
 
+        <p>Los eventos pueden utilizar un metodo de la interface Event llamado <span>preventDefault()</span> el cual si el evento no se maneja como se espera evita que la accion predeterminada de dicho evento se lleve acabo. Su sintaxis:</p>
+
+        <pre>
+        event.preventDefault();
+        </pre>
+
+        <p>El método preventDefault() cancela el evento si es cancelable, lo que significa que la acción predeterminada que pertenece al evento no ocurrirá.</p>
+
+        <p>Por ejemplo, esto puede ser útil cuando:</p>
+
+        <ul>
+            <li>Al hacer clic en el botón "Enviar", evita que envíe un formulario</li>
+            <li>Al hacer clic en un enlace, evita que el enlace siga la URL</li>
+        </ul>
+
+        <p><span>Nota: </span>No todos los eventos son cancelables. Utilice la propiedad cancelable para averiguar si un evento es cancelable.</p>
+
+        <p><span>Nota: </span>El método preventDefault() no previene la propagación de un evento a través del DOM. Use el método <span>stopPropagation()</span> para manejar esto.</p>
+
 
         <div class="container ejercicio">
 
