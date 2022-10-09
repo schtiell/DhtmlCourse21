@@ -88,4 +88,6 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 
 - 58.event_focus.html utiliza el evento **focus** para mandar un mensaje en consola que se ha enfocado un elemento.
 
-- 59.focus_blur.html ya que son 2 eventos que van de la mano enfoque y desenfoque el ejericico utiliza ambos eventos para realizar algunos cambios en los estilos css de los elementos input
+- 59.focus_blur.html ya que son 2 eventos que van de la mano enfoque y desenfoque el ejericico utiliza ambos eventos para realizar algunos cambios en los estilos css de los elementos input. El evento **blur** lanza el evento cuando un elemento es desenfocado
+
+- 60.event_submit.html el evento **submit** utilizado el evento sobre todo para comprobar datos antes de realizar una solicitud al servidor. Se utiliza el metodo **preventDefault()** del evento para evitar el comportamiento predefinido del elemento que dispara el evento

@@ -1,19 +1,17 @@
 
+let formulario = document.getElementById("formulario");
 
-console.log("event submit");
+formulario.addEventListener("submit", e => {
 
-let formulario = document.getElementById("datos-formulario");
-
-formulario.addEventListener("submit", e =>{
-
-    let nombre = document.getElementById("text-name");
-    let pass = document.getElementById("text-pass");
-    let passconfirm = document.getElementById("text-passconfirm");
+    let nombre = document.getElementById("user");
+    let pass = document.getElementById("pass");
+    let passconfirm = document.getElementById("confirmpass");
 
 
     if( nombre.value == "" || pass.value == "" || passconfirm.value == ""){
         alert("Debes completar los campos del formulario");
-        //el metodo preventDefaul() evita que se envien los datos al servidor
+
+        //el metodo preventDefault() evita que se envien los datos al servidor
         e.preventDefault();
         return false;
 
@@ -25,7 +23,6 @@ formulario.addEventListener("submit", e =>{
             return true;
 
         }else{
-
             alert("La contraseña debe ser igual");
             e.preventDefault();
             return false;
