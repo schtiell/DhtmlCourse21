@@ -5,54 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Importando la libreria jQuery -->
-    <script src="./js/jquery-3.6.0.min.js"></script>
-
-    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-            
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-    <style>
-        .container{
-            margin: 20px auto;
-            background-color: #EBF5FB;
-            color: #212F3D;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            top: 50px;
-            left:100px
-        }
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     
-        h1{
-            margin: 30px auto;
-            text-align: center;
-        }
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-        .form-control{
-            display: inline-block;
-            width: 40%;
-            margin: 30px 20px;
-        }
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
-    </style>
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/58.styles.css" type="text/css">
 
-    <title>Events: focus & blur</title>
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
+
+    <title>Evento de enfoque: blur</title>
 </head>
 <body>
 
     <div class="container">
-        <h1>Event: <small>focus & blur</small></h1>
 
-        <form action="#" >
-            <label for="text-name">Nombre:</label>
-            <input type="text" name="name" value="Nombre..." id="text-name" class="form-control">
+        <h1>
+            DHTML: HTML Dinámico:
+            <small>Evento de desenfoque: blur</small>
+        </h1>
 
-            <label for="text-email">email</label>
-            <input type="email" name="email" value="email..." id="text-email" class="form-control">
+        <hr>
 
-        </form>
+        <p>El evento blur se dispara cuando pierde el foco el control. Se puede capturar el evento blur de un control de tipo text, textarea, button, checkbox, file, password, radio, reset, submit.</p>
+
+        <div class="container ejercicio">
+            <h2>
+                Ejercicio
+            </h2>
+
+            <hr>
+
+            <p>Para probar su funcionamiento se dispondrá dos controles de tipo text con algún contenido. Fijaremos de color azul su fuente. Al tomar foco el control cambiará a color rojo y al perder el foco volve</p>
+
+            <form action="#" method="post">
+            
+                <div class="form-group row">
+                    <label for="nombre" class="col-sm-4 col-form-label">Nombre:</label>
+                    <div class="col-sm-8">
+                        <input type="text" id="nombre" class="form-control">
+                    </div>
+                </div>
+    
+                <div class="form-group row">
+                    <label for="email" class="col-sm-4 col-form-label">email</label>
+                    <div class="col-sm-8">
+                        <input type="email" id="email" class="form-control">
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 
     <script src="./js/59.focus_blur.js"></script>

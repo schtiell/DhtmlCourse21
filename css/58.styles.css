@@ -47,10 +47,12 @@ span{
     font-style: italic;
 }
 
-label,
-#buscar{
-    display: block;
+.row{
     margin: 20px auto;
-    width: 40%;
+    padding: 10px 20px;
+    text-align: center
+}
+
+label{
     font-weight: bold;
 }

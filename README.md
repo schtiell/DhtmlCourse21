@@ -87,3 +87,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 57.mousemove.html, muestra el ejemplo de ejecucion del evento **mousemove** que imprime en el DOM las coordenadas cuando el puntero del mouse se mueve sobre una imagen
 
 - 58.event_focus.html utiliza el evento **focus** para mandar un mensaje en consola que se ha enfocado un elemento.
+
+- 59.focus_blur.html ya que son 2 eventos que van de la mano enfoque y desenfoque el ejericico utiliza ambos eventos para realizar algunos cambios en los estilos css de los elementos input

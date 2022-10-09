@@ -1,26 +1,23 @@
-console.log("focus & blur");
 
+let textboxes = document.getElementsByTagName("input");
 
-let nombre = document.getElementById("text-name");
-let email = document.getElementById("text-email");
+for (let i = 0; i < textboxes.length; i++) {
 
+    let element = textboxes[i];
 
-nombre.addEventListener("focus", e => {
-    e.target.style.background = "#FDEDEC ";
-    console.log(e.target.id);
-});
+    element.addEventListener("focus", e => {
+        
+        e.target.style.background = "#EAFAF1";
+        e.target.style.border = "3px solid #58D68D";
+        e.target.setAttribute("value", `Escribe tu ${e.target.id} por favor...`);
+        console.log(e.target.id);
+    })
 
-nombre.addEventListener("blur", e => {
-    e.target.style.background = "#FBFCFC ";
-    console.log(e.target.id);
-});
-
-email.addEventListener("focus", e => {
-    e.target.style.background = "#FDEDEC ";
-    console.log(e.target.id);
-});
-
-email.addEventListener("blur", e => {
-    e.target.style.background = "#FBFCFC ";
-    console.log(e.target.id);
-});
+    element.addEventListener("blur", e => {
+        e.target.style.background = "#FFF ";
+        e.target.style.border = "1px solid #ced4da";
+        e.target.style.border = "1px solid #ced4da";
+        e.target.setAttribute("value", "");
+        console.log(e.target.id);
+    })
+}
