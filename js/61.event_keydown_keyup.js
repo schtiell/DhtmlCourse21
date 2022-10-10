@@ -1,10 +1,8 @@
 
-console.log("event: keydown & keyup");
+let user = document.getElementById("user");
 
-let user = document.getElementById("text-id");
-
-//Al pulsar la tecla se activa el evento que llama a la funcion anonima y revisa si la tecla presionada coindide con la validación
-user.addEventListener("keydown", function (e){
+//Al pulsar la tecla se activa el evento que llama a la funcion flecha y revisa si la tecla presionada coindide con la validación
+user.addEventListener("keyup", e => {
     let tecla = e.key;
 
     if (tecla == " "){
@@ -15,10 +13,17 @@ user.addEventListener("keydown", function (e){
 });
 
 
-let comentarios = document.getElementById("area-id");
+let comentarios = document.getElementById("area");
 
-comentarios.addEventListener("keydown", e =>{
+let comentario = new Array();
+
+comentarios.addEventListener("keyup", e => {
 
     let tecla = e.key;
     console.log(tecla);
+
+
 });
+
+
+
