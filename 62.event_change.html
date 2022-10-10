@@ -5,91 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Importando la libreria jQuery -->
-    <script src="./js/jquery-3.6.0.min.js"></script>
-
-    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-            
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-    <style>
-        .container{
-            margin: 20px auto;
-            background-color: #EBF5FB;
-            color: #212F3D;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            top: 50px;
-            left:100px
-        }
-
-        hr{
-            margin: 40px;
-        }
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     
-        h1{
-            margin: 30px auto;
-            text-align: center;
-        }
-
-        h2{
-            margin: 30px;
-        }
-
-        label{
-            margin: 10px;
-        }
-
-        .form-control {
-            width: 45%;
-            margin: 10px auto;
-        }
-
-        .btn{
-            display: block;
-            margin: 40px auto;
-        }
-
-        textarea{
-            margin: 30px;
-        }
-
-    </style>
-
-
-    <title>Event: change</title>
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/58.styles.css" type="text/css">
+    
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
+    
+    <title>Evento change</title>
 </head>
 <body>
     <div class="container">
-        <h1>Event: <small>change</small></h1>
+        <h1>
+            DHTML: HTML Dinámico
+            <small>Evento change</small>
+        </h1>
 
-        <p>El evento change se dispara para los controles select, textarea e input de tipo text.</p>
+        <hr>
+
+        <p>El evento change se dispara para los controles input, select y textarea, cuando una alteración al valor de un elemento es confirmada por el usuario.  </p>
 
         <p>Para el control input se dispara cuando ha cambiado su contenido y pierde el foco, en cambio para el control select cada vez que cambiamos el item seleccionado se dispara el evento.</p>
 
         <hr>
 
-        <form action="#" class="form-floating">
+        <div class="container ejercicio">
 
-            <label for="user-id">Nombre: </label>
-            <input type="text" name="user-name" id="name-id" class="form-control">
+            <h2>Ejercicio:</h2>
 
-            <label for="user-id">Apellido: </label>
-            <input type="text" name="user-lastname" id="lastname-id" class="form-control">
+            <hr>
 
-            <label for="select-id">Selecciona una opcion:</label>
-            <select name="numbers" id="select-id" class="form-control">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
+            <p>El siguiente ejemplo con cada evento change imprime en consola el id del elemento que dispara el evento change. Por ultomo se imprime el valor ingresado y seleccionado de todos los elemento mediante el evento submit</p>
+            <form action="#" method="post" id="formulario" class="form-floating">
 
-            <button type="submit" class="btn btn-primary" id="btn-id">Enviar</button>
-        </form>
+                <div class="form-group row">
+
+                    <div class="col-sm-4">
+                        <label for="name" class="col-sm-label">Nombre: </label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" name="user-name" id="name" class="form-control">
+                    </div>
+
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                        <label for="lastname" class="col-sm-label">Apellido:</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" name="lastname" id="lastname" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                        <label for="direccion" class="col-sm-label">Dirección: </label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" name="user-lastname" id="direccion" class="form-control">
+                    </div>
+                </div>       
+                
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                        <label for="opcion" class="col-sm-label">Selecciona una opcion:</label>
+                    </div>
+    
+                    <div class="col-sm-5">
+                        <select name="numbers" id="opcion" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <button class="btn btn-primary" id="btn">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
     <script src="./js/62.event_change.js"></script>
 </body>

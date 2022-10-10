@@ -93,3 +93,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 60.event_submit.html el evento **submit** utilizado el evento sobre todo para comprobar datos antes de realizar una solicitud al servidor. Se utiliza el metodo **preventDefault()** del evento para evitar el comportamiento predefinido del elemento que dispara el evento
 
 - 61.event_keydown_keyup.html, usa los eventos **keydown** y **keyup** para registrar los evento al presionar y soltar una tecla
+
+- 62.event_change.html, uso el evento **change** el cual dispara el evento sobre los elementos INPUT, TEXTAREA una vez que se ha cambiado el foco y sobre el tipo SELECT cuando se cambia de opciones
