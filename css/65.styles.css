@@ -1,0 +1,55 @@
+
+.container{
+    display: block;
+    text-align: center;
+    background-color: #FAFAFA;
+    color: #212F3D;
+    font-size: 16px;
+    padding: 20px 30px;
+}
+
+.ejercicio{
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: 80%;
+}
+
+small{
+    display: block;
+    color: #8C9193;
+}
+
+hr{
+    margin: 40px;
+}
+
+h1,
+h2,
+h3{
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+p{
+    margin: 20px;
+    text-align: justify;
+}
+
+span{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.recuadroExterior{
+    border: 2px solid #0A7CC8;
+    background-color: #BBDFF7;
+    margin: 40px 20px;
+    padding: 20px 30px;
+}
+
+.recuadroInterior{
+    border: 2px solid #7D3C98;
+    background-color: #E5E7E9;
+
+}

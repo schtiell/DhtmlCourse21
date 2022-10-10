@@ -99,3 +99,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 63.event_scroll.html utiliza el evento **scroll** que es ejecutado al realizar desplazamiento de las barras.
 
 - 64.informacion_evento.html, muestra algunas de las propiedades y metodos que genera un evento, dicha información está disponible dentro del objeto **Event**
+
+- 65.burbujeo_y_captura_eventos.html burbujeo_y_captura_eventos_2.html se explica el funcionamiento de los eventos.
