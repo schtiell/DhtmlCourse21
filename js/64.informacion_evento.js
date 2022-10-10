@@ -6,7 +6,7 @@ informacionEvento.addEventListener("click", e => {
 
     let container = document.getElementById("container")
 
-    container.style.display = "block";
+    console.log(e);
 
     container.innerHTML = `
 
@@ -15,7 +15,7 @@ informacionEvento.addEventListener("click", e => {
         <p>Tecla shift presionada (e.shiftkey) ? ${e.shiftKey}</p>
         <p>Tecla meta presionada (e.metakey) ? ${e.metaKey}</p>
         <p>El nombre del evento (e.type) ? ${e.type}</p>
-        <p>El nombre del evento que causo el evento (e.target) ? ${e.target}</p>
+        <p>El nombre del evento que causo el evento (e.target) ? ${e.target.name}</p>
         <p>La coordenada x del mouse respecto a la ventana (e.clientX) ? ${e.clientX}</p>
         <p>La coordenada y del mouse respecto a la ventana (e.clientY) ? ${e.clientY}</p>
         <p>La coordenada x del mouse respecto a la pantalla completa (e.screenX) ? ${e.screenX}</p>

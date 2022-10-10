@@ -95,3 +95,7 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 61.event_keydown_keyup.html, usa los eventos **keydown** y **keyup** para registrar los evento al presionar y soltar una tecla
 
 - 62.event_change.html, uso el evento **change** el cual dispara el evento sobre los elementos INPUT, TEXTAREA una vez que se ha cambiado el foco y sobre el tipo SELECT cuando se cambia de opciones
+
+- 63.event_scroll.html utiliza el evento **scroll** que es ejecutado al realizar desplazamiento de las barras.
+
+- 64.informacion_evento.html, muestra algunas de las propiedades y metodos que genera un evento, dicha información está disponible dentro del objeto **Event**
