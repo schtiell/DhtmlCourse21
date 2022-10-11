@@ -1,14 +1,31 @@
 
-console.log("detener la propagacion del burbujeo de ventos");
+// Detiene la propagacion del evento al contenedor padre
+document.getElementById("contenedorInterno").addEventListener("click", e => {
+    e.target.style.backgroundColor = "#00FF00";
 
-
-document.getElementById("divHijo").addEventListener("click", e => {
-    alert(e.target.id);
-
-    //El metodo stopPropagataion() evita que el al dispararse el evento de un elemento hijo tambien se dispare el evento que pudiera tener el elemento padre.
+    setTimeout(() => {
+        alert(`target = ${e.target.id}, this = ${e.target.tagName}`);
+        e.target.style.backgroundColor = "";
+    }, 0);
     e.stopPropagation();
 });
 
-document.getElementById("divPadre").addEventListener("click", e => {
-    alert(`Click sobre el elemento ${e.target.id}`);
+// Detiene la propagacion del evento al contenedor padre
+document.getElementById("contenedorExterno").addEventListener("click", e => {
+    e.target.style.backgroundColor = "#00FF00";
+
+    setTimeout(() => {
+        alert(`target = ${e.target.id}, this = ${e.target.tagName}`);
+        e.target.style.backgroundColor = "";
+    }, 0);
+    e.stopPropagation();
+});
+
+document.getElementById("contenedorNivel2").addEventListener("click", e => {
+        e.target.style.backgroundColor = "#00FF00";
+
+    setTimeout(() => {
+        alert(`target = ${e.target.id}, this = ${e.target.tagName}`);
+        e.target.style.backgroundColor = "";
+    }, 0);
 });

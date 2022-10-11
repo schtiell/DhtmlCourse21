@@ -31,6 +31,13 @@ h3{
     font-weight: bold;
 }
 
+pre{
+    margin: 40px;
+    text-align: justify;
+    font-weight: bold;
+    font-style: italic;
+}
+
 p{
     margin: 20px;
     text-align: justify;
@@ -39,6 +46,12 @@ p{
 span{
     font-weight: bold;
     font-style: italic;
+}
+.recuadroExterior2{
+    border: 2px solid #F5CBA7 ;
+    background-color: #F0F941;
+    margin: 40px 20px;
+    padding: 20px 30px;
 }
 
 .recuadroExterior{
@@ -52,4 +65,9 @@ span{
     border: 2px solid #7D3C98;
     background-color: #E5E7E9;
 
+}
+
+button{
+    display: block;
+    margin: 10px 30px;
 }

@@ -1,6 +1,3 @@
-console.log("Detener burbujeo de eventos");
-
-
 //Funcion que dispara el evento click de los botones
 let presionarBoton = function (e) {
     
@@ -14,6 +11,7 @@ let presionarBoton = function (e) {
 let presionarContenedor = function (e) {
 
     alert("Presionar el contenedor de los botones");
+    e.stopImmediatePropagation();
 }
 
 //Funcion que dispara el evento click del container
@@ -22,14 +20,10 @@ let presionarDocumento = function (e) {
     alert("Se presionó el documento");
 }
 
-document.getElementById("btn-1").addEventListener("click", presionarBoton);
+document.getElementById("boton1").addEventListener("click", presionarBoton);
+document.getElementById("boton2").addEventListener("click", presionarBoton);  
+document.getElementById("boton3").addEventListener("click", presionarBoton);   
 
-document.getElementById("btn-2").addEventListener("click", presionarBoton);
+document.getElementById("container").addEventListener("click", presionarContenedor);    
 
-document.getElementById("btn-3").addEventListener("click", presionarBoton);
-
-document.getElementById("container").addEventListener("click", presionarContenedor);
-
-
-
-document.addEventListener("click",presionarDocumento);
+document.addEventListener("click",presionarDocumento);  // Document

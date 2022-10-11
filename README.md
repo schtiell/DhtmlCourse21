@@ -100,4 +100,6 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 
 - 64.informacion_evento.html, muestra algunas de las propiedades y metodos que genera un evento, dicha información está disponible dentro del objeto **Event**
 
-- 65.burbujeo_y_captura_eventos.html burbujeo_y_captura_eventos_2.html se explica el funcionamiento de los eventos.
+- 65.captura_eventos.html 66.captura_eventos.html se explica el funcionamiento de los eventos.
+
+- 67.detener_propagacion.html y 68.detener_propagacion.html, muestran el ejemplos con el metodo stopPropagation() y stopImmediatePropagation() que son utilizados para evitar que el evento del contenedor padre sea ejecutado.

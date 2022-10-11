@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- cdn jquery for bootstrap framework-->
+    
+    <!-- cdn jquery for bootstrap framework-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     
     <!-- css3 for bootstrap  -->
@@ -20,39 +20,35 @@
     <!-- cdn favicon -->
     <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/html-5--v1.png" type="image/x-icon">
 
-    <title>Burbujeo y captura de eventos</title>
+    <title>Detener el propagación de eventos</title>
+
 </head>
-<body id="body">
-    <div class="container" id="container-padre">
+<body>
+    <div class="container" id="container">
         
-        <h1>
-            DHTML: HTML Dinámico
-            <small>Burbujeo y captura de eventos</small>
+        <h1>DHTML: HTML Dinámico
+            <small>Detener el propagación de eventos</small>
         </h1>
 
         <hr>
 
-        <div class="container ejericicio" id="container-ejercicio">
+        <div class="container" id="contenedor">
 
-            <h2>
-                Ejercicio:
-            </h2>
+            <h2>Ejercicio:</h2>
 
-            <p>Disponer 3 botones, mostrar un mensaje indicando que botón se presionó, además cambiar el color de fondo del documento indistintamente de que botón se presionó.</p>
-
-            <p>Primero registrar los eventos indicando en el parámetro capture el valor false, luego probar indicándole el valor true.</p>
-    
-            <p>Hay algún cambio en cuanto al orden de pintado del fondo y la salida del mensaje de alerta?</p>
-    
             <hr>
-            
-            <button class="btn btn-primary" id="boton-1">Boton 1</button>
-            <button class="btn btn-primary" id="boton-2">Boton 2</button>
-            <button class="btn btn-primary" id="boton-3">Boton 3</button>
-            
-        </div>
-    </div>
 
-    <script src="./js/66.burbujeo_y_captura_eventos_2.js" type="text/javascript"></script>
+            <p><span>Ejercicio: </span>Crear una página que contenga tres botones. Cuando se presione alguno de ellos mostrar un mensaje por pantalla. También mostrar un mensaje cuando se presione el fondo del documento. Luego modifique el programa comentando la línea donde se activa el burbujeo (debería aparecer tanto el mensaje que se presionó el botón como que se presionó el documento)</p>
+
+            <button class="btn btn-primary" id="boton1">Boton1</button>
+            <button class="btn btn-primary" id="boton2">Boton2</button>
+            <button class="btn btn-primary" id="boton3">Boton3</button>
+        </div>
+
+        
+    
+    </div> 
+
+    <script src="./js/68.detener_burbujeo_eventos.js" type="text/javascript"></script>
 </body>
 </html>
