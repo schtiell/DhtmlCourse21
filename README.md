@@ -103,3 +103,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 65.captura_eventos.html 66.captura_eventos.html se explica el funcionamiento de los eventos.
 
 - 67.detener_propagacion.html y 68.detener_propagacion.html, muestran el ejemplos con el metodo stopPropagation() y stopImmediatePropagation() que son utilizados para evitar que el evento del contenedor padre sea ejecutado.
+
+- 69.desactivar_evento_pordefecto.html 70.desactivar_evento_pordefecto.html, utiliza el motodo **preventDefault()** para evitar el evento por defecto de los elementos html
