@@ -1,5 +1,4 @@
-
-let contador = 0;
+contador = 0;
 
 let presionarBoton = function (e) {
 
@@ -7,7 +6,6 @@ let presionarBoton = function (e) {
     elemento.style.background = "#F4D03F"
     contador += 1;
     elemento.innerText = contador;
-    
 }
 
 let presionarBotonDocumento = function (){
@@ -17,10 +15,10 @@ let presionarBotonDocumento = function (){
     elemento.innerText = contador;
 }
 
-
-document.getElementById("boton-1").addEventListener("click",presionarBoton,true);
-document.getElementById("boton-2").addEventListener("click",presionarBoton,true);
-document.getElementById("boton-3").addEventListener("click",presionarBoton,true);
+// Botones
+document.getElementById("boton-1").addEventListener("click",presionarBoton);
+document.getElementById("boton-2").addEventListener("click",presionarBoton);
+document.getElementById("boton-3").addEventListener("click",presionarBoton);
 
 document.addEventListener("click", presionarBotonDocumento);
 
