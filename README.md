@@ -105,3 +105,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 67.detener_propagacion.html y 68.detener_propagacion.html, muestran el ejemplos con el metodo stopPropagation() y stopImmediatePropagation() que son utilizados para evitar que el evento del contenedor padre sea ejecutado.
 
 - 69.desactivar_evento_pordefecto.html 70.desactivar_evento_pordefecto.html, utiliza el motodo **preventDefault()** para evitar el evento por defecto de los elementos html
+
+- 71.querySelector.html 72.querySelector_2.html, en estos ejemplos se muestra como hacer referencia a elementos del DOM a traves de selectores de CSS (etiquetas, id o clases), se usa le metodo **querySelector()** que recibe como parametro el la **"etiquea"**, **"#id"** si es id o **".class"** si es una clase
