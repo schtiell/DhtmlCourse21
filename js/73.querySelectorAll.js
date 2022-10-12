@@ -1,22 +1,22 @@
 
-console.log("querySelectorAll");
 
-let boton = document.querySelector(".btn");
+let getElementList = function () {
+    
+    let listaol = document.querySelectorAll("ol li");
+    console.log(typeof listaol);
 
-boton.addEventListener("click", e => {
-
-    let lista_ol = document.querySelectorAll("ol li");
-
-    for (const elemento of lista_ol) {
-
-        elemento.style.color = "lightgreen";
-    }
+    listaol.forEach(element => {
+        element.style.color = "#3498DB";
+    });
 
     let lista_ul = document.querySelectorAll("ul li");
-
-    for (const elemento of lista_ul) {
-
-        elemento.style.background = "lightgreen";
+    console.log(typeof lista_ul);
+    
+    for (let elemento of lista_ul) {
+        elemento.style.background = "#AED6F1";
     }
+}
 
-});
+// Seleccionando elemento por clase
+let boton = document.querySelector(".btn");
+boton.addEventListener("click", getElementList)
