@@ -11,7 +11,9 @@ function recuperarPrecio(){
     //El único parámetro requerido de fetch() es una url. El método por defecto en este caso es GET.
     fetch("https://api.coincap.io/v2/assets/bitcoin")
         .then(respuesta => respuesta.json())
+        
         .then(datos => {
+            console.log(datos);
             document.querySelector("#precio").innerHTML = parseInt(datos.data.priceUsd);
 
             if(parseFloat(datos.data.changePercent24Hr) > 0){
