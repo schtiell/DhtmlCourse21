@@ -108,4 +108,6 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 
 - 71.querySelector.html 72.querySelector_2.html, en estos ejemplos se muestra como hacer referencia a elementos del DOM a traves de selectores de CSS (etiquetas, id o clases), se usa le metodo **querySelector()** que recibe como parametro el la **"etiquea"**, **"#id"** si es id o **".class"** si es una clase
 
-- 73.querySelectorAll.html y 73.querySelectorAll_2.html, muestran como seleccionar un conjunto de elementos del DOM, mediante el metodo **querySelectorAll("<tagName> o #id o .class")**, el cual retorna un array.
+- 73.querySelectorAll.html y 74.querySelectorAll_2.html, muestran como seleccionar un conjunto de elementos del DOM, mediante el metodo **querySelectorAll("<tagName> o #id o .class")**, el cual retorna un array.
+
+- 75.className_property.html, utiliza la propiedad **className** para obtener o establecer una clase a un elemento del DOM

@@ -1,14 +1,13 @@
-console.log("className property");
-
 
 let mostrarOcultar = function () {
 
-    let contenedor = document.querySelector("#containerOV");
+    let contenedor = document.querySelector("#contenedor");
 
-    if (contenedor.className == "contenedorVisible"){
-        contenedor.className = "contenedorOculto";
+    if (contenedor.className == "visible"){
+        contenedor.className = "oculto";
+        
     }else{
-        contenedor.className = "contenedorVisible";
+        contenedor.className = "visible";
     }
 
 }
