@@ -111,3 +111,5 @@ El siguiente apartado hace una descripción de cada uno de los ejercicios realiz
 - 73.querySelectorAll.html y 74.querySelectorAll_2.html, muestran como seleccionar un conjunto de elementos del DOM, mediante el metodo **querySelectorAll("<tagName> o #id o .class")**, el cual retorna un array.
 
 - 75.className_property.html, utiliza la propiedad **className** para obtener o establecer una clase a un elemento del DOM
+
+- 76.reto_tablaDinamica.html, dado un array de objetos con nombre y salario se construye la tabla, ademas con un textBox a busca a partir del valor de la cadena las coincidencias de la tabla. Asi mismo se agrega un id con el metodo setAttribe() y una clase con la propiedad className a la tabla
