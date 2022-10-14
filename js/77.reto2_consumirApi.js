@@ -21,23 +21,27 @@ function recuperarPrecio(){
         .then( datos => {
 
             console.log(datos);
+            console.log(typeof datos.data);
 
             let precio = document.querySelector("#precio");
 
-            let valor = datos.data;
+            // Se almacena en una variable el objeto
+            let respuesta = datos.data;
 
-            precio.innerHTML = parseInt(valor.priceUsd);
+            precio.innerHTML = parseInt(respuesta.priceUsd);
 
-            if(parseFloat(valor.changePercent24Hr) > 0){
+            // La funcion parseFloar convierte el argumento en valor flotante
+            if(parseFloat(respuesta.changePercent24Hr) > 0){
 
                 document.querySelector("#variacion").style.color = "green";
-                document.querySelector("#variacion").innerHTML = "↑" + parseFloat(valor.
+                document.querySelector("#variacion").innerHTML = "↑" + parseFloat(respuesta.
                 changePercent24Hr).toFixed(2);
 
             }else{
 
+                // El metodo numerico toFixed(), da formato de punto decimal, el parametro indica cuantos decimales apareceran despues del punto
                 document.querySelector("#variacion").style.color = "red";
-                document.querySelector("#variacion").innerHTML = "↓" + parseFloat(datos.data.changePercent24Hr).toFixed(2);
+                document.querySelector("#variacion").innerHTML = "↓" + parseFloat(respuesta.changePercent24Hr).toFixed(2);
             }
         })
 
@@ -48,7 +52,10 @@ function recuperarPrecio(){
                 console.log(error)
             })
         */
-}
+};
 
+// Invocando a lafuncion
 recuperarPrecio();
+
+// Se llama cada 5 segundos a la función para actualizar los datos del sitio
 setInterval(recuperarPrecio, 5000);
