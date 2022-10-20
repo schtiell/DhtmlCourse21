@@ -15,24 +15,32 @@ fetch("https://restcountries.com/v3.1/all")
         for (const pais of datos){
 
             let monedas = pais.currencies;
+            let idiomas = pais.languages;
+            let moneda;
+            let idioma;
             
             for (const key in monedas) {
-                
                 if(monedas.hasOwnProperty(key)){
-                    console.log(monedas[key].name);
+                    //console.log(monedas[key].name);
+                    moneda = monedas[key].name;
                 }
             }
 
-            break
-            
+            for (const key in idiomas) {
+                if (idiomas.hasOwnProperty(key)) {
+                    idioma = idiomas[key];
+                    
+                }
+            }
+
             banderas += `<div class="tarjeta">
                             <img src="${pais.flags.png}"><br>
                             <p>Pais: ${pais.name.official}</p>
                             <p>Capital: ${pais.capital}</p>
                             <p>Población: ${pais.population.toLocaleString()}</p>
                             <p>Continente: ${pais.region}</p>
-                            <p>Lenguaje: ${pais.language}</p>
-                            <p>Moneda: ${pais.currencies.hasOwnProperty(pais)}</p>
+                            <p>Lenguaje: ${idioma}</p>
+                            <p>Moneda: ${moneda}</p>
                         </div>`;
         }
 
