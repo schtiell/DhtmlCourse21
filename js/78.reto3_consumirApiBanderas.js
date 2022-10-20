@@ -1,4 +1,3 @@
-console.log("consumiendo api");
 
 //La función fetch recibe la dirección de la api y retorna un archivo JSON
 fetch("https://restcountries.com/v3.1/all")
@@ -11,15 +10,29 @@ fetch("https://restcountries.com/v3.1/all")
 
         //Cadena vacia
         let banderas = " ";
+        //console.log(datos);
 
         for (const pais of datos){
 
+            let monedas = pais.currencies;
+            
+            for (const key in monedas) {
+                
+                if(monedas.hasOwnProperty(key)){
+                    console.log(monedas[key].name);
+                }
+            }
+
+            break
+            
             banderas += `<div class="tarjeta">
                             <img src="${pais.flags.png}"><br>
                             <p>Pais: ${pais.name.official}</p>
                             <p>Capital: ${pais.capital}</p>
                             <p>Población: ${pais.population.toLocaleString()}</p>
                             <p>Continente: ${pais.region}</p>
+                            <p>Lenguaje: ${pais.language}</p>
+                            <p>Moneda: ${pais.currencies.hasOwnProperty(pais)}</p>
                         </div>`;
         }
 

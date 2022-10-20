@@ -14,9 +14,9 @@ let agregarElementos = function (parent, el) {
 
 let ul = document.getElementById("autores");
 
-let recuperarAutor = function () {
+let recuperarAutor = function (url) {
 
-    fetch("https://randomuser.me/api/?results=10")
+    fetch(url)
     .then(response => response.json())
     .then(data => {
         let autores = data.results;
@@ -40,4 +40,4 @@ let recuperarAutor = function () {
 // Url de la API
 const url = 'https://randomuser.me/api/?results=10';
 
-recuperarAutor();
+recuperarAutor(url);
